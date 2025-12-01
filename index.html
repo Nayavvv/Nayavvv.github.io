@@ -5,10 +5,10 @@
   <title>Naya Velasco | Data, foránea vibes & small chaos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Google Font bonita -->
+  <!-- Fuentes con personalidad -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -73,9 +73,9 @@
         <div class="hero-side">
           <div class="image-card">
             <div class="image-frame">
-              <!-- Cuando quieras, reemplaza el div por: <img src="foto-naya.jpg" alt="Foto de Naya" /> -->
+              <!-- Cuando quieras, reemplaza el div por: <img src="naya.jpg" alt="Foto de Naya" /> -->
               <div class="image-placeholder">
-                <span>✨ aquí va una foto bonita de Naya ✨</span>
+                ✨ aquí va una foto bonita de Naya ✨
               </div>
             </div>
             <p class="image-caption">
@@ -127,7 +127,8 @@
       </p>
 
       <div class="cards-grid">
-        <article class="card">
+        <article class="card timeline-card">
+          <div class="timeline-tag">01</div>
           <h3>Peque chica coatepecana ☕🌧️</h3>
           <p>
             Café, lluvia, declamación, familia enorme, deportes, SIPINNA en mi municipio,
@@ -135,7 +136,8 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="card timeline-card">
+          <div class="timeline-tag">02</div>
           <h3>Prepa en Xalapa 🚍</h3>
           <p>
             Primer medio salto: estudiar la prepa en la capital de Veracruz.
@@ -144,7 +146,8 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="card timeline-card">
+          <div class="timeline-tag">03</div>
           <h3>Llegar a CDMX 🌆</h3>
           <p>
             El salto grande: irme de casa por primera vez, entrar al ITAM,
@@ -153,7 +156,8 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="card timeline-card">
+          <div class="timeline-tag">04</div>
           <h3>Supervivencia actual 🔁</h3>
           <p>
             Semestres con horarios feos, transporte que no coopera,
@@ -165,7 +169,7 @@
       </div>
     </section>
 
-    <!-- WHAT I DO -->
+    <!-- QUÉ HAGO -->
     <section id="now" class="section">
       <h2>Qué hago ahora <span class="pill">What I’m up to</span></h2>
       <p class="section-intro">
@@ -239,52 +243,33 @@
       </div>
     </section>
 
-    <!-- TIMELINE + QUOTES -->
+    <!-- TIMELINE PEQUEÑO + QUOTES WIDGET -->
     <section id="timeline" class="section alt">
-      <h2>Eras de Naya <span class="pill">little timeline</span></h2>
+      <h2>Eras de Naya <span class="pill">mini timeline</span></h2>
       <p class="section-intro">Not a CV, just context and vibes.</p>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-badge">1</div>
-          <div class="timeline-content">
-            <h3>Coatepec</h3>
-            <p>café, lluvia, familia, declamación, deportes, SIPINNA, mucho ruido, mucho cariño.</p>
-          </div>
+      <div class="timeline-strip">
+        <div class="timeline-dot-card">
+          <span>Coatepec</span>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-badge">2</div>
-          <div class="timeline-content">
-            <h3>Xalapa</h3>
-            <p>prepa, ir y venir, más independencia, primeras decisiones que se sienten grandes.</p>
-          </div>
+        <div class="timeline-dot-card">
+          <span>Xalapa</span>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-badge">3</div>
-          <div class="timeline-content">
-            <h3>CDMX (adaptación)</h3>
-            <p>nueva ciudad, nuevas rutas, nostalgia pesada, videollamadas largas, empezar a armar hogar.</p>
-          </div>
+        <div class="timeline-dot-card">
+          <span>CDMX adaptación</span>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-badge">4</div>
-          <div class="timeline-content">
-            <h3>CDMX (supervivencia)</h3>
-            <p>
-              semestres intensos, responsabilidades nuevas, caos gracioso,
-              momentos buenos, otros no tanto, pero siempre “todo por la anécdota”.
-            </p>
-          </div>
+        <div class="timeline-dot-card">
+          <span>CDMX supervivencia</span>
         </div>
       </div>
 
       <div class="quotes-box">
         <p class="section-intro">Frase al azar / random thought:</p>
+        <div class="quote-widget">
+          <div class="quote-icon">“</div>
+          <div id="random-quote" class="quote-text"></div>
+        </div>
         <button class="fun-btn" onclick="showRandomQuote()">otra frase</button>
-        <div id="random-quote" class="random-fact-box"></div>
       </div>
     </section>
 
@@ -309,41 +294,54 @@
 
         <div class="fun-box">
           <p class="section-intro">Random fun fact button (porque obvio):</p>
+          <div class="quote-widget small">
+            <div class="quote-icon">✦</div>
+            <div id="random-fact" class="quote-text"></div>
+          </div>
           <button class="fun-btn" onclick="showRandomFact()">random fun fact</button>
-          <div id="random-fact" class="random-fact-box"></div>
         </div>
       </div>
     </section>
 
-    <!-- PHOTODUMPS -->
+    <!-- PHOTODUMPS CAROUSEL -->
     <section id="photos" class="section alt">
       <h2>Photodumps</h2>
       <p class="section-intro">
         Fotos sin contexto, pero con cariño. Little moments I don’t want to forget.
       </p>
 
-      <div class="photo-grid">
-        <div class="photo-card">
-          <div class="photo-thumb">coatepec / family time</div>
+      <div class="carousel">
+        <div class="carousel-slide active">
+          <div class="carousel-image">coatepec / family time</div>
         </div>
-        <div class="photo-card">
-          <div class="photo-thumb">conciertos / friends</div>
+        <div class="carousel-slide">
+          <div class="carousel-image">conciertos / friends</div>
         </div>
-        <div class="photo-card">
-          <div class="photo-thumb">campus / itam chronicles</div>
+        <div class="carousel-slide">
+          <div class="carousel-image">campus / itam chronicles</div>
         </div>
-        <div class="photo-card">
-          <div class="photo-thumb">little things that mean “I’m okay”</div>
+        <div class="carousel-slide">
+          <div class="carousel-image">little things that mean “I’m okay”</div>
+        </div>
+
+        <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+        <button class="carousel-btn next" aria-label="Siguiente">›</button>
+
+        <div class="carousel-dots">
+          <button data-index="0" class="active"></button>
+          <button data-index="1"></button>
+          <button data-index="2"></button>
+          <button data-index="3"></button>
         </div>
       </div>
 
       <p class="photo-note">
-        Luego puedes cambiar cada cuadro por una foto real usando:<br />
-        <code>&lt;img src="foto1.jpg" alt="algo bonito" /&gt;</code>
+        Puedes cambiar cada slide por una foto real usando:<br />
+        <code>&lt;img src="foto1.jpg" alt="algo bonito" /&gt;</code> dentro de <code>.carousel-image</code>.
       </p>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACTO -->
     <section id="contact" class="section">
       <h2>Contacto <span class="pill">say hi</span></h2>
       <p class="section-intro">
@@ -396,9 +394,49 @@
       box.textContent = quotes[Math.floor(Math.random() * quotes.length)];
     }
 
+    // Carrusel simple
+    const slides = [];
+    const dots = [];
     document.addEventListener("DOMContentLoaded", () => {
       showRandomFact();
       showRandomQuote();
+
+      const slideEls = document.querySelectorAll(".carousel-slide");
+      const dotEls = document.querySelectorAll(".carousel-dots button");
+      slideEls.forEach(s => slides.push(s));
+      dotEls.forEach(d => dots.push(d));
+
+      function goToSlide(index) {
+        slides.forEach((s, i) => {
+          s.classList.toggle("active", i === index);
+        });
+        dots.forEach((d, i) => {
+          d.classList.toggle("active", i === index);
+        });
+        currentSlide = index;
+      }
+
+      let currentSlide = 0;
+
+      document.querySelector(".carousel-btn.next").addEventListener("click", () => {
+        const next = (currentSlide + 1) % slides.length;
+        goToSlide(next);
+      });
+
+      document.querySelector(".carousel-btn.prev").addEventListener("click", () => {
+        const prev = (currentSlide - 1 + slides.length) % slides.length;
+        goToSlide(prev);
+      });
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => goToSlide(index));
+      });
+
+      // auto-advance
+      setInterval(() => {
+        const next = (currentSlide + 1) % slides.length;
+        goToSlide(next);
+      }, 6000);
     });
   </script>
 </body>
