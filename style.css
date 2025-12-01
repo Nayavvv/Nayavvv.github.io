@@ -541,9 +541,11 @@ main {
 
 .slide img {
   width: 100%;
-  height: 420px;
-  object-fit: cover;
+  height: auto;
+  max-height: 450px; /* mantiene controlado el tamaño */
+  object-fit: contain;  /* NO CORTA NADA */
   border-radius: 18px;
+  background: #ffffff; /* para que las fotos verticales no tengan gaps raros */
 }
 
 .photo-caption {
