@@ -1,20 +1,6 @@
-/* ===========================
-   VARIABLES & RESET
-   =========================== */
-
-:root {
-  --bg: #f6f2ff;
-  --bg-alt: #fdf8ff;
-  --card: #ffffff;
-  --blue: #6d9bff;
-  --blue-soft: #aac7ff;
-  --lilac: #c79bff;
-  --pink: #ffb5d9;
-  --text-main: #1c2333;
-  --text-soft: #6b7080;
-  --shadow: 0 18px 50px rgba(75, 78, 145, 0.25);
-  --radius-lg: 20px;
-}
+/* ---------------------------------------------- */
+/* RESET Y AJUSTES GENERALES                      */
+/* ---------------------------------------------- */
 
 * {
   margin: 0;
@@ -22,687 +8,224 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: radial-gradient(circle at top left, #ffe9f7 0, #f6f2ff 40%, #e4f2ff 100%);
-  color: var(--text-main);
+  font-family: "Inter", sans-serif;
+  background-color: #f6f7fb;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* ===========================
-   TOPBAR / NAV
-   =========================== */
-
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 30;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 8%;
-  background: rgba(250, 248, 255, 0.92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.avatar-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  background: conic-gradient(from 120deg, var(--blue), var(--lilac), var(--pink), var(--blue));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+h1, h2, h3 {
+  color: #1f2a44;
   font-weight: 700;
-  font-family: "Space Grotesk", system-ui;
-  font-size: 15px;
 }
 
-.brand-name {
-  font-weight: 600;
-  font-size: 17px;
-  font-family: "Space Grotesk", system-ui;
+/* ---------------------------------------------- */
+/* CONTENEDORES GENERALES                         */
+/* ---------------------------------------------- */
+
+section {
+  padding: 60px 40px;
 }
 
-.brand-sub {
-  font-size: 12px;
-  color: var(--text-soft);
-}
-
-.nav-links {
-  display: flex;
-  gap: 10px;
-  font-size: 13px;
-}
-
-.nav-links a {
+a {
   text-decoration: none;
-  color: var(--text-main);
-  padding: 5px 10px;
-  border-radius: 999px;
-  transition: 0.18s;
+  color: inherit;
 }
 
-.nav-links a:hover {
-  background: rgba(186, 201, 255, 0.4);
-  color: var(--blue);
-}
+/* ---------------------------------------------- */
+/*                      HERO                      */
+/* ---------------------------------------------- */
 
-/* ===========================
-   LAYOUT & SECTIONS
-   =========================== */
-
-main {
-  padding: 28px 8% 60px;
-}
-
-.section {
-  margin: 40px auto;
-  max-width: 1120px;
-}
-
-.section.alt {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 30px;
-  padding: 26px 24px;
-  box-shadow: var(--shadow);
-}
-
-.section h2 {
-  font-family: "Space Grotesk", system-ui;
-  font-size: 26px;
-  margin-bottom: 6px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.section h2::after {
-  content: "";
-  height: 3px;
-  width: 52px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--blue), var(--pink));
-  display: block;
-}
-
-.section-intro {
-  color: var(--text-soft);
-  font-size: 14px;
-  margin-bottom: 16px;
-}
-
-.pill {
-  font-size: 11px;
-  padding: 4px 9px;
-  border-radius: 999px;
-  background: linear-gradient(120deg, var(--blue-soft), var(--pink));
-  color: #fff;
-}
-
-/* ===========================
-   HERO
-   =========================== */
-
-.hero {
-  max-width: 1180px;
-  margin: 12px auto 40px;
-  padding: 32px 30px;
-  border-radius: 32px;
-  background: radial-gradient(circle at top right, #ffe5f9 0, #eef3ff 40%, #e4f2ff 80%);
-  box-shadow: var(--shadow);
-}
-
-.hero-inner {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero-text {
-  flex: 1.3;
+.clean-hero {
+  padding: 130px 40px 110px;
+  text-align: center;
+  background: linear-gradient(135deg, #e4eaff, #f3f6ff);
 }
 
 .hero-chip {
-  display: inline-flex;
-  font-size: 11px;
-  padding: 5px 10px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(170, 196, 255, 0.8);
-  color: var(--text-soft);
-  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #4b5fa6;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.hero h1 {
-  font-family: "Space Grotesk", system-ui;
-  font-size: 38px;
-  margin-bottom: 4px;
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #1f2a44;
 }
 
-.hero-sub {
-  font-size: 18px;
-  color: var(--blue);
-  margin-bottom: 2px;
-}
-
-.hero-sub-alt {
-  font-size: 13px;
-  color: var(--text-soft);
-  margin-bottom: 14px;
+.hero-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5a678f;
+  margin-bottom: 20px;
 }
 
 .hero-desc {
-  font-size: 14px;
-  margin-bottom: 8px;
+  max-width: 750px;
+  margin: 0 auto 14px;
+  font-size: 16px;
+  color: #444b66;
 }
 
-.hero-motto {
-  margin-top: 10px;
-  font-size: 14px;
-  font-style: italic;
-  color: var(--lilac);
-  font-weight: 500;
-}
-
-.hero-tags {
-  margin-top: 12px;
+.hero-buttons {
+  margin-top: 30px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.hero-tags span {
-  font-size: 11px;
-  padding: 4px 9px;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 999px;
-  border: 1px dashed rgba(170, 196, 255, 0.9);
-}
-
-.hero-links {
-  margin-top: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.primary-btn,
-.ghost-btn {
-  font-size: 13px;
-  padding: 8px 16px;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
+  justify-content: center;
+  gap: 14px;
 }
 
 .primary-btn {
-  background: linear-gradient(135deg, var(--blue-soft), var(--pink));
-  color: #fff;
-  box-shadow: 0 10px 26px rgba(155, 151, 255, 0.6);
-}
-
-.primary-btn:hover {
-  box-shadow: 0 12px 32px rgba(155, 151, 255, 0.8);
+  padding: 12px 28px;
+  background-color: #4d5aee;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .ghost-btn {
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--blue);
-  border: 1px solid rgba(170, 196, 255, 0.9);
-}
-
-/* HERO IMAGE */
-
-.hero-side {
-  flex: 1;
-}
-
-.image-card {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 26px;
-  padding: 12px;
-  box-shadow: 0 18px 48px rgba(142, 145, 255, 0.45);
-}
-
-.image-frame {
-  border-radius: 20px;
-  overflow: hidden;
-  background: linear-gradient(135deg, var(--blue-soft), var(--pink));
-  height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-placeholder {
-  padding: 20px;
-  color: #fff;
-  text-align: center;
-  font-size: 14px;
-}
-
-.image-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.image-caption {
-  font-size: 12px;
-  color: var(--text-soft);
-  margin-top: 10px;
-}
-
-/* ===========================
-   GENERIC CARDS / GRIDS
-   =========================== */
-
-.card {
-  background: rgba(255, 255, 255, 0.97);
-  border-radius: var(--radius-lg);
-  padding: 18px;
-  box-shadow: 0 12px 30px rgba(143, 155, 255, 0.2);
-  font-size: 14px;
-}
-
-.card.soft {
-  box-shadow: 0 12px 26px rgba(143, 155, 255, 0.16);
-}
-
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
-}
-
-.section-tagline {
-  font-family: "Space Grotesk", system-ui;
+  padding: 12px 28px;
+  border: 2px solid #4d5aee;
+  color: #4d5aee;
+  border-radius: 10px;
+  font-weight: 600;
   font-size: 15px;
-  margin-bottom: 10px;
 }
 
-/* ===========================
-   SKILLS
-   =========================== */
+/* ---------------------------------------------- */
+/*               SECCIÓN SKILLS                   */
+/* ---------------------------------------------- */
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+.skills {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.skill-pill-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.skill-pill {
-  font-size: 11px;
-  padding: 5px 10px;
-  border-radius: 999px;
-  background: rgba(222, 211, 255, 0.9);
-  color: #3b3058;
-}
-
-/* ===========================
-   STATS
-   =========================== */
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.stats-grid img {
-  width: 100%;
-  border-radius: 16px;
-}
-
-/* ===========================
-   ERAS DE NAYA
-   =========================== */
-
-.eras-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 14px;
-}
-
-.era-chip {
-  border: none;
-  border-radius: 999px;
-  padding: 6px 14px;
-  font-size: 12px;
-  cursor: pointer;
-  background: rgba(227, 220, 255, 0.9);
-  color: #3b3058;
-}
-
-.era-chip.active {
-  background: linear-gradient(120deg, var(--blue-soft), var(--pink));
-  color: #fff;
-  box-shadow: 0 10px 24px rgba(155, 151, 255, 0.5);
-}
-
-.era-panel {
-  font-size: 14px;
-}
-
-/* ===========================
-   FUN FACTS & QUOTES
-   =========================== */
-
-.funfacts-layout {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.fun-box {
-  flex: 1;
-}
-
-.fun-list {
-  list-style: none;
-  padding-left: 0;
-  flex: 1;
-}
-
-.fun-list li {
-  margin-bottom: 8px;
-  font-size: 13px;
-  position: relative;
-  padding-left: 18px;
-}
-
-.fun-list li::before {
-  content: "✦";
-  position: absolute;
-  left: 2px;
-  top: 0;
-  font-size: 11px;
-  color: var(--lilac);
-}
-
-.quote-widget {
-  display: flex;
-  align-items: center;
-  background: radial-gradient(circle at top left, #ffe5f4, #f3f0ff);
-  border-radius: 20px;
-  padding: 14px 16px;
-  box-shadow: 0 12px 30px rgba(166, 151, 255, 0.3);
-  margin-bottom: 10px;
-}
-
-.quote-text {
-  font-size: 14px;
-  position: relative;
-}
-
-.quote-text::before,
-.quote-text::after {
-  font-family: "Space Grotesk", system-ui;
-  font-size: 20px;
-  color: var(--lilac);
-}
-
-.quote-text::before {
-  content: "“ ";
-  margin-right: 4px;
-}
-
-.quote-text::after {
-  content: " ”";
-  margin-left: 4px;
-}
-
-.fun-btn {
-  background: linear-gradient(135deg, var(--blue-soft), var(--pink));
-  color: #fff;
-  border: none;
-  border-radius: 999px;
-  padding: 8px 16px;
-  font-size: 13px;
-  cursor: pointer;
-  margin-top: 4px;
-  box-shadow: 0 10px 26px rgba(155, 151, 255, 0.6);
-  transition: transform 0.12s, box-shadow 0.12s;
-}
-
-.fun-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 30px rgba(155, 151, 255, 0.8);
-}
-
-/* ===========================
-   PHOTODUMPS CAROUSEL
-   =========================== */
-
-.carousel {
-  position: relative;
-  max-width: 560px;
-  margin: 10px auto 0;
-}
-
-.carousel-slide {
-  display: none;
-}
-
-.carousel-slide.active {
-  display: block;
-}
-
-.carousel-image {
-  height: 220px;
-  border-radius: 22px;
-  background: linear-gradient(135deg, var(--lilac), var(--pink));
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.skills h2 {
   text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  background: white;
   padding: 18px;
-  font-size: 14px;
-  box-shadow: 0 16px 40px rgba(163, 140, 255, 0.6);
-}
-
-.carousel-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 18px;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  background: rgba(255, 255, 255, 0.9);
-  width: 32px;
-  height: 32px;
-  border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 8px 18px rgba(140, 141, 255, 0.5);
-}
-
-.carousel-btn.prev {
-  left: -18px;
-}
-
-.carousel-btn.next {
-  right: -18px;
-}
-
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 12px;
-}
-
-.carousel-dots button {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  border: none;
-  background: rgba(180, 176, 255, 0.6);
-  cursor: pointer;
-}
-
-.carousel-dots button.active {
-  width: 18px;
-  background: linear-gradient(90deg, var(--blue), var(--pink));
-}
-
-/* ===========================
-   CONTACTO & FOOTER
-   =========================== */
-
-.contact-box p {
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-
-.contact-box a {
-  color: var(--blue);
-  text-decoration: none;
-}
-
-.contact-box a:hover {
-  text-decoration: underline;
-}
-
-.footer {
+  border-radius: 12px;
   text-align: center;
-  padding: 22px 0 30px;
-  font-size: 13px;
-  color: var(--text-soft);
+  border: 1px solid #e2e6f5;
+  font-weight: 600;
 }
 
-.footer .motto {
-  font-family: "Space Grotesk", system-ui;
-  font-weight: 500;
-  color: var(--lilac);
+/* ---------------------------------------------- */
+/*               PROYECTOS Y EXPERIENCIA          */
+/* ---------------------------------------------- */
+
+.projects-section {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.footer-small {
-  font-size: 12px;
+.projects-section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-/* ===========================
-   RESPONSIVE
-   =========================== */
-
-@media (max-width: 930px) {
-  .hero-inner {
-    flex-direction: column;
-  }
-
-  .hero-side {
-    width: 100%;
-  }
-
-  .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-  }
-
-  .two-col,
-  .funfacts-layout {
-    flex-direction: column;
-  }
-
-  .carousel-btn.prev {
-    left: 4px;
-  }
-
-  .carousel-btn.next {
-    right: 4px;
-  }
+.project-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  border: 1px solid #e1e5f0;
+  margin-bottom: 16px;
 }
-/* SECTION: SNAPSHOTS OF LIFE — Masonry Layout */
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  color: #444b66;
+}
+
+/* ---------------------------------------------- */
+/*                 PHOTODUMP (MASONRY)            */
+/* ---------------------------------------------- */
 
 .photo-section {
-    margin-top: 80px;
-    padding: 20px;
+  margin-top: 40px;
+  padding: 20px;
 }
 
 .photo-section h2 {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 5px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 6px;
 }
 
 .photo-subtitle {
-    text-align: center;
-    color: #6b6b6b;
-    margin-bottom: 35px;
+  text-align: center;
+  color: #6b6b6b;
+  margin-bottom: 35px;
 }
 
 .masonry {
-    column-count: 3;
-    column-gap: 20px;
-    padding: 10px 40px;
+  column-count: 3;
+  column-gap: 20px;
+  padding: 10px 40px;
 }
 
 .masonry-item {
-    break-inside: avoid;
-    margin-bottom: 20px;
-    opacity: 0;
-    animation: fadeIn 1.2s ease forwards;
+  break-inside: avoid;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .masonry-item img {
-    width: 100%;
-    border-radius: 8px;  /* esquinas suaves */
-    display: block;
+  width: 100%;
+  border-radius: 8px;
+  display: block;
 }
 
 .masonry-item span {
-    display: block;
-    margin-top: 6px;
-    font-size: 14px;
-    color: #555;
-    text-align: center;
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  font-weight: 500;
 }
 
-/* Fade-in suave */
+/* Fade-in efecto */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
+/* ---------------------------------------------- */
+/*               RESPONSIVE DESIGN                */
+/* ---------------------------------------------- */
+
 @media (max-width: 900px) {
-    .masonry { column-count: 2; }
+  .masonry { column-count: 2; }
 }
 
 @media (max-width: 600px) {
-    .masonry { column-count: 1; }
+  .masonry { column-count: 1; }
+  .hero-title { font-size: 38px; }
+  .hero-subtitle { font-size: 18px; }
+  .hero-desc { font-size: 15px; }
 }
