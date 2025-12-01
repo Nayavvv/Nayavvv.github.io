@@ -512,4 +512,57 @@ main {
     height: 260px;
   }
 }
+/* CAROUSEL — aesthetic, suave, pastel */
+
+.carousel {
+  width: 100%;
+  max-width: 750px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(123, 97, 255, 0.12);
+  background: radial-gradient(circle at top, #fdf4ff 0%, #e0e7ff 40%, #ffffff 100%);
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slideShow 28s infinite;
+}
+
+.slide {
+  min-width: 100%;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.slide img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.photo-caption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #6d28d9; /* lila bonito */
+  font-weight: 500;
+}
+
+@keyframes slideShow {
+  0%   { transform: translateX(0%); }
+  10%  { transform: translateX(0%); }
+  15%  { transform: translateX(-100%); }
+  25%  { transform: translateX(-100%); }
+  30%  { transform: translateX(-200%); }
+  40%  { transform: translateX(-200%); }
+  45%  { transform: translateX(-300%); }
+  55%  { transform: translateX(-300%); }
+  60%  { transform: translateX(-400%); }
+  70%  { transform: translateX(-400%); }
+  75%  { transform: translateX(-500%); }
+  85%  { transform: translateX(-500%); }
+  100% { transform: translateX(0%); }
+}
 
