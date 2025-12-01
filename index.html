@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Naya Velasco | Data Science Student</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Fuente Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Naya Velasco | Data Science student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- TOPBAR -->
-  <header class="topbar">
+  <!-- NAVBAR -->
+  <header class="top-nav">
     <div class="brand">
-      <span class="brand-initials">NV</span>
+      <div class="brand-initials">NV</div>
       <div class="brand-text">
-        <div class="brand-name">Naya Velasco</div>
-        <div class="brand-sub">Data Science · ITAM · CDMX</div>
+        <span class="brand-name">Naya Velasco</span>
+        <span class="brand-sub">Data Science student @ ITAM · Coatepec → CDMX</span>
       </div>
     </div>
-
-    <nav class="nav">
+    <nav>
       <a href="#hero">Inicio</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Proyectos</a>
       <a href="#stats">Stats</a>
       <a href="#music">Música</a>
-      <a href="#eras">Trayectoria</a>
+      <a href="#trajectory">Trayectoria</a>
       <a href="#profile">Perfil</a>
       <a href="#photos">Fotos</a>
       <a href="#game">Juego</a>
@@ -36,264 +30,312 @@
     </nav>
   </header>
 
-  <main>
+  <!-- HERO -->
+  <section id="hero" class="clean-hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-label">coatepec ➝ cdmx · data science · slightly chaotic</p>
+        <h1>Naya Velasco</h1>
+        <h2>Data Science student @ ITAM</h2>
 
-    <!-- HERO -->
-    <section id="hero" class="clean-hero">
-      <div class="hero-inner">
-        <p class="hero-chip">Data Science · ITAM · CDMX</p>
-
-        <h1 class="hero-title">Naya Velasco</h1>
-        <p class="hero-subtitle">Data Science Student @ ITAM</p>
-
-        <p class="hero-desc">
-          Estudiante de Ciencia de Datos con formación técnica en Tecnologías de la Información
-          y Comunicación y experiencia en análisis, bases de datos y sistemas distribuidos.
-          Me interesa desarrollar soluciones donde los datos ayuden a comprender problemas
-          reales y comunicar resultados con claridad.
+        <p class="hero-text">
+          Estudiante de Ciencia de Datos en el ITAM. Trabajo con datos, código y mini desastres diarios.
+          Me interesa usar <strong>Python, SQL</strong> y herramientas de data para analizar información,
+          contar historias reales y tomar decisiones mejor informadas.
         </p>
 
-        <p class="hero-desc">
-          Trabajo principalmente con Python, SQL, PySpark y herramientas de análisis para
-          transformar información en observaciones útiles.
+        <p class="hero-text">
+          Soy originaria de <strong>Coatepec, Veracruz</strong> y ahora vivo en CDMX. Busco un equilibrio honesto
+          entre estudiar, sobrevivir, seguir aprendiendo y mantener cercanas a las personas que quiero.
         </p>
 
-        <div class="hero-buttons">
-          <a href="mailto:nayadevelasco@gmail.com" class="primary-btn">Contacto</a>
+        <p class="hero-quote">
+          “Bueno, ¿qué es lo peor que puede pasar? Hazlo.”
+        </p>
+
+        <div class="hero-tags">
+          <span class="pill">#python</span>
+          <span class="pill">#sql</span>
+          <span class="pill">#data</span>
+          <span class="pill">#storytelling</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="primary-btn">Escríbeme</a>
           <a href="https://github.com/Nayavvv" target="_blank" class="ghost-btn">GitHub</a>
         </div>
       </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="section-inner">
-        <h2>Skills</h2>
-        <p class="section-intro">
-          Tecnologías y temas con los que trabajo con más frecuencia en la carrera y en proyectos.
-        </p>
-
-        <div class="skills-grid">
-          <div class="card">
-            <h3>Lenguajes y consultas</h3>
-            <div class="pill-row">
-              <span class="pill">Python</span>
-              <span class="pill">SQL</span>
-              <span class="pill">Bash</span>
-              <span class="pill">HTML/CSS básico</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Herramientas y ecosistema</h3>
-            <div class="pill-row">
-              <span class="pill">Git & GitHub</span>
-              <span class="pill">VS Code / Cursor</span>
-              <span class="pill">Jupyter</span>
-              <span class="pill">Pandas</span>
-              <span class="pill">NumPy</span>
-              <span class="pill">PySpark</span>
-              <span class="pill">Hadoop · MapReduce</span>
-              <span class="pill">Cassandra · MongoDB</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Áreas de interés</h3>
-            <div class="pill-row">
-              <span class="pill">Análisis de datos</span>
-              <span class="pill">Machine learning básico</span>
-              <span class="pill">Sistemas distribuidos</span>
-              <span class="pill">Visualización</span>
-              <span class="pill">Storytelling con datos</span>
-              <span class="pill">Educación y comunidad</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROYECTOS -->
-    <section id="projects" class="section alt">
-      <div class="section-inner">
-        <h2>Proyectos</h2>
-        <p class="section-intro">
-          Una vista rápida de algunos ámbitos en los que he trabajado y participado.
-        </p>
-
-        <div class="cards-grid">
-          <article class="card">
-            <h3>Big Data y PySpark</h3>
-            <p>
-              Prácticas con PySpark y Hadoop para procesar conjuntos de datos grandes:
-              lectura, limpieza básica, agregaciones y cálculo de métricas.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Análisis y limpieza de datos</h3>
-            <p>
-              Proyectos en Python (Pandas, NumPy) y SQL para preparar datos, generar
-              descripciones estadísticas, crear visualizaciones sencillas y presentar hallazgos.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Representación FOE (B1T)</h3>
-            <p>
-              Representante ante la FOE para la División de Ciencias de la Computación.
-              Participación en actividades de representación estudiantil y comunicación con la facultad.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>El Supuesto</h3>
-            <p>
-              Editora junior en <em>El Supuesto</em>, el periódico escolar del ITAM.
-              Textos publicados en las secciones de Nacional y Cultura.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Servicio social – Crecemos Leyendo</h3>
-            <p>
-              Servicio social con niñas y niños de sexto de primaria, acompañando procesos de lectura,
-              comprensión y actividades académicas en un contexto educativo.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- STATS -->
-    <section id="stats" class="section">
-      <div class="section-inner">
-        <h2>Stats</h2>
-        <p class="section-intro">
-          Un resumen visual de las herramientas que uso más seguido.
-        </p>
-
-        <div class="stats-grid">
-          <div class="card">
-            <h3>Lenguajes que uso con mayor frecuencia</h3>
-
-            <div class="stat-row">
-              <span>Python</span>
-              <div class="stat-bar">
-                <div style="width: 85%;"></div>
-              </div>
-            </div>
-
-            <div class="stat-row">
-              <span>SQL</span>
-              <div class="stat-bar">
-                <div style="width: 75%;"></div>
-              </div>
-            </div>
-
-            <div class="stat-row">
-              <span>PySpark</span>
-              <div class="stat-bar">
-                <div style="width: 55%;"></div>
-              </div>
-            </div>
-
-            <div class="stat-row">
-              <span>Bash / Shell</span>
-              <div class="stat-bar">
-                <div style="width: 50%;"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Actividad</h3>
-            <p>
-              La mayor parte de mi actividad en GitHub se concentra en:
-            </p>
-            <ul class="simple-list">
-              <li>Repositorios de la carrera en Ciencia de Datos.</li>
-              <li>Prácticas con PySpark, Hadoop y bases de datos no relacionales.</li>
-              <li>Scripts de limpieza y exploración de datos en Python.</li>
-            </ul>
-            <p>
-              Perfil completo:
-              <a href="https://github.com/Nayavvv" target="_blank">github.com/Nayavvv</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MÚSICA -->
-    <section id="music" class="section alt">
-      <div class="section-inner">
-        <h2>Música</h2>
-        <p class="section-intro">
-          Una de las playlists que suelo usar de fondo mientras trabajo o estudio.
-        </p>
-
-        <div class="card">
-          <iframe style="border-radius:16px"
-            src="https://open.spotify.com/embed/playlist/7h3JjZPfcLkqbsNyIl9NwR?utm_source=generator"
-            width="100%" height="160" frameborder="0" allow="autoplay; encrypted-media">
-          </iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRAYECTORIA -->
-    <section id="eras" class="section">
-      <div class="section-inner">
-        <h2>Trayectoria</h2>
-        <p class="section-intro">
-          Breve contexto de cómo llegué a estudiar Ciencia de Datos en CDMX.
-        </p>
-
-        <div class="eras-chips">
-          <button class="era-chip active" data-era="coatepec">Coatepec</button>
-          <button class="era-chip" data-era="xalapa">Xalapa</button>
-          <button class="era-chip" data-era="cdmx_inicio">CDMX (inicio)</button>
-          <button class="era-chip" data-era="cdmx_actual">CDMX (actual)</button>
+      <div class="hero-side">
+        <div class="hero-card">
+          <h3>Pack foránea</h3>
+          <ul>
+            <li>Horarios raros y transporte impredecible.</li>
+            <li>Aprovechar cada puente para regresar a Coatepec.</li>
+            <li>Audífonos de repuesto horribles que nunca se pierden.</li>
+          </ul>
         </div>
 
-        <div class="card era-panel">
-          <p id="era-text"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PERFIL -->
-    <section id="profile" class="section alt">
-      <div class="section-inner">
-        <h2>Perfil</h2>
-        <p class="section-intro">
-          Algunos datos personales y actividades que me han acompañado en el camino.
-        </p>
-
-        <div class="card">
-          <ul class="simple-list">
-            <li>Me gusta capturar momentos y pequeños detalles, especialmente a través de fotos.</li>
-            <li>Disfruto asistir a conciertos y experiencias en vivo.</li>
-            <li>Fui declamadora y oradora durante primaria y secundaria.</li>
-            <li>Participé en SIPINNA en mi municipio.</li>
-            <li>He practicado diversos deportes: nado sincronizado, taekwondo, ballet, atletismo, danza y tenis.</li>
-            <li>Realizo servicio social con niñas y niños en programas de acompañamiento académico y lectura.</li>
+        <div class="hero-card">
+          <h3>Ahora mismo</h3>
+          <ul>
+            <li>Estudiando Ciencia de Datos en el ITAM.</li>
+            <li>Representante ante la FOE (B1T) para Ciencias de la Computación.</li>
+            <li>Editora junior de Deportes en <em>El Supuesto</em>.</li>
+            <li>Servicio social en <em>Crecemos Leyendo</em> con niñas y niños de sexto.</li>
           </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOTOS / SNAPSHOTS OF LIFE -->
-    <section id="photos" class="photo-section">
-      <h2>SNAPSHOTS OF LIFE</h2>
-      <p class="photo-subtitle">Capturando recuerdos que me acompañan</p>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <h2>Skills · tech side</h2>
+      <p class="section-intro">
+        Herramientas y temas con los que trabajo seguido en la carrera y en proyectos.
+      </p>
+
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Lenguajes y consultas</h3>
+          <div class="pill-row">
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Bash / terminal</span>
+            <span class="pill">HTML + CSS básico</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Herramientas y ecosistema</h3>
+          <div class="pill-row">
+            <span class="pill">Git &amp; GitHub</span>
+            <span class="pill">VS Code / Cursor</span>
+            <span class="pill">Jupyter</span>
+            <span class="pill">Pandas · NumPy</span>
+            <span class="pill">PySpark</span>
+            <span class="pill">Hadoop · MapReduce</span>
+            <span class="pill">Cassandra · MongoDB</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Intereses</h3>
+          <div class="pill-row">
+            <span class="pill">Análisis de datos</span>
+            <span class="pill">Machine learning básico</span>
+            <span class="pill">Visualización</span>
+            <span class="pill">Sistemas distribuidos</span>
+            <span class="pill">Storytelling con datos</span>
+            <span class="pill">Educación y comunidad</span>
+            <span class="pill">Deporte y movimiento</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt">
+    <div class="section-inner">
+      <h2>Proyectos y roles</h2>
+      <p class="section-intro">
+        Un poco de lo que hago dentro y fuera de la carrera.
+      </p>
+
+      <div class="cards-2col">
+        <article class="card">
+          <h3>Representación FOE (B1T)</h3>
+          <p>
+            Representante ante la FOE para la División de Ciencias de la Computación.
+            Participación en actividades de representación estudiantil y comunicación
+            con la comunidad de la división.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>El Supuesto</h3>
+          <p>
+            Editora junior de la sección de Deportes en <em>El Supuesto</em>, el periódico escolar del ITAM.
+            Aunque mi rol formal está en Deportes, he publicado textos en las secciones de Nacional y Cultura.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Crecemos Leyendo</h3>
+          <p>
+            Servicio social con niñas y niños de sexto de primaria. Acompaño lectura,
+            escritura y actividades que buscan que los libros se sientan cercanos y propios.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Proyectos de datos</h3>
+          <p>
+            Trabajo con bases de datos, consultas en SQL, análisis en Python y experimentos con PySpark
+            y Hadoop para cursos de sistemas distribuidos y bases de datos no relacionales.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats" class="section">
+    <div class="section-inner">
+      <h2>Stats · cómo voy</h2>
+      <p class="section-intro">Resumen visual de en qué paso más tiempo últimamente.</p>
+
+      <div class="cards-2col">
+        <div class="card">
+          <h3>Uso de herramientas</h3>
+
+          <div class="stat-row">
+            <span>Python</span>
+            <div class="stat-bar"><div style="width: 85%"></div></div>
+          </div>
+
+          <div class="stat-row">
+            <span>SQL</span>
+            <div class="stat-bar"><div style="width: 75%"></div></div>
+          </div>
+
+          <div class="stat-row">
+            <span>Git / GitHub</span>
+            <div class="stat-bar"><div style="width: 70%"></div></div>
+          </div>
+
+          <div class="stat-row">
+            <span>PySpark · Hadoop</span>
+            <div class="stat-bar"><div style="width: 60%"></div></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Semana típica</h3>
+          <ul class="stats-list">
+            <li><strong>Clases y tareas:</strong> proyectos de datos, programación y teoría.</li>
+            <li><strong>Trabajo con datos:</strong> notebooks, queries y dashboards sencillos.</li>
+            <li><strong>Comunidad:</strong> FOE, periódico escolar y servicio social.</li>
+            <li><strong>Off:</strong> conciertos, fotos, tiempo con familia y amigos.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section id="music" class="section alt">
+    <div class="section-inner">
+      <h2>Música · ahora escuchando</h2>
+      <p class="section-intro">
+        Si estás leyendo esto, probablemente estoy estudiando o viajando en transporte con esta playlist.
+      </p>
+
+      <div class="music-layout">
+        <div class="card">
+          <h3>Playlist favorita</h3>
+          <p>
+            Una mezcla de pop, algo de nostalgia y canciones que se ganaron su lugar
+            en el día a día.
+          </p>
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/7h3JjZPfcLkqbsNyIl9NwR?utm_source=generator"
+            width="100%" height="352" frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAJECTORY -->
+  <section id="trajectory" class="section">
+    <div class="section-inner">
+      <h2>Trayectoria académica · mini timeline</h2>
+      <p class="section-intro">
+        No es un CV completo, solo contexto de cómo llegué a Ciencia de Datos en el ITAM.
+      </p>
+
+      <div class="trajectory-grid">
+        <div class="card">
+          <h3>Coatepec</h3>
+          <p>
+            Crecer en Coatepec fue vivir entre café, lluvia, familia grande y muchas actividades:
+            declamación, deportes y participación en SIPINNA en mi municipio.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Xalapa</h3>
+          <p>
+            Estudié la preparatoria en la capital de Veracruz y obtuve el técnico en
+            Tecnologías de la Información y Comunicación. Primer paso para tomar
+            en serio el mundo de la tecnología.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>CDMX · adaptación</h3>
+          <p>
+            Llegar al ITAM, aprender nuevas rutas, administrar rentas y permisos, y
+            entender cómo se vive siendo foránea por primera vez.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>CDMX · supervivencia</h3>
+          <p>
+            Semestres con horarios raros, transporte que no siempre coopera, gente que aparece
+            en los momentos menos esperados y la idea constante de seguir construyendo una vida
+            que se sienta propia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFILE + QUOTES -->
+  <section id="profile" class="section alt">
+    <div class="section-inner">
+      <h2>Perfil · quién soy</h2>
+
+      <div class="cards-2col">
+        <div class="card">
+          <h3>Un poco sobre mí</h3>
+          <ul class="stats-list">
+            <li>Me importa mucho mi familia, mis amigas y amigos, y mi comunidad.</li>
+            <li>Busco equilibrio entre estudio, proyectos y seguir descubriéndome.</li>
+            <li>Me gusta capturar momentos en fotos y guardar pequeños detalles del día a día.</li>
+            <li>Fui declamadora y oradora de niña, y eso explica un poco mi gusto por escribir.</li>
+            <li>He practicado distintos deportes: desde nado sincronizado y taekwondo hasta otras disciplinas.</li>
+          </ul>
+        </div>
+
+        <div class="card quote-card">
+          <h3>Frase del momento</h3>
+          <p id="quote-text">
+            Prefiero arrepentirme de cómo salió a arrepentirme de no haberlo hecho.
+          </p>
+          <button id="quote-btn" class="ghost-btn small">Otra frase</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section id="photos" class="section photo-section">
+    <div class="section-inner">
+      <h2>Snapshots of life</h2>
+      <p class="section-intro">Un pequeño álbum de recuerdos que me gustan.</p>
 
       <div class="masonry">
-
         <div class="masonry-item">
-          <img src="img/photo1.jpg" alt="Instalación de arte — luces y reflejos">
-          <span>Instalación de arte — luces y reflejos</span>
+          <img src="img/photo1.jpg" alt="Guts Gallery — luces y reflejos">
+          <span>Guts Gallery — luces y reflejos</span>
         </div>
 
         <div class="masonry-item">
@@ -307,8 +349,8 @@
         </div>
 
         <div class="masonry-item">
-          <img src="img/photo4.jpg" alt="Paseo con mis perros en el campo">
-          <span>Paseo con mis perros en el campo</span>
+          <img src="img/photo4.jpg" alt="Con mis perros">
+          <span>Con mis perros</span>
         </div>
 
         <div class="masonry-item">
@@ -340,248 +382,207 @@
           <img src="img/photo10.jpg" alt="Puente colgante en la naturaleza">
           <span>Puente colgante en la naturaleza</span>
         </div>
-
-      </div>
-    </section>
-
-    <!-- JUEGO INTERACTIVO -->
-    <section id="game" class="section">
-      <div class="section-inner">
-        <h2>Juego</h2>
-        <p class="section-intro">
-          Pequeño ejercicio interactivo para ordenar datos de forma sencilla.
-        </p>
-
-        <div class="card">
-          <p>
-            <strong>Data Sort Puzzle:</strong> elige los números en el orden correcto
-            (de menor a mayor). Es una forma simple de representar la idea de
-            ordenar datos.
-          </p>
-          <button id="open-game" class="primary-btn small">Abrir juego</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- MODAL DEL JUEGO -->
-    <div id="game-modal" class="modal">
-      <div class="modal-content">
-        <button class="modal-close">&times;</button>
-        <h3>Data Sort Puzzle</h3>
-        <p>
-          Haz clic en los números de la columna izquierda para construir tu orden
-          en la columna derecha. Cuando termines, presiona “Revisar”.
-        </p>
-
-        <div class="game-layout">
-          <div class="game-column">
-            <h4>Datos desordenados</h4>
-            <div id="pool" class="game-pool"></div>
-          </div>
-          <div class="game-column">
-            <h4>Tu orden</h4>
-            <div id="target" class="game-pool"></div>
-          </div>
-        </div>
-
-        <div class="game-controls">
-          <span>Tiempo: <span id="timer">20</span>s</span>
-          <div class="game-buttons">
-            <button id="start-game" class="primary-btn small">Iniciar</button>
-            <button id="reset-game" class="ghost-btn small">Reiniciar</button>
-            <button id="check-game" class="ghost-btn small">Revisar</button>
-          </div>
-        </div>
-
-        <p id="game-message" class="game-message"></p>
       </div>
     </div>
+  </section>
 
-    <!-- CONTACTO -->
-    <section id="contact" class="section alt">
-      <div class="section-inner">
-        <h2>Contacto</h2>
-        <div class="card">
-          <p><strong>Email:</strong> <a href="mailto:nayadevelasco@gmail.com">nayadevelasco@gmail.com</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/Nayavvv" target="_blank">github.com/Nayavvv</a></p>
-          <p><strong>Instagram:</strong> <a href="https://instagram.com/nayavelac" target="_blank">@nayavelac</a></p>
-          <p><strong>Twitter/X:</strong> <a href="https://twitter.com/naya_va2" target="_blank">@naya_va2</a></p>
-        </div>
+  <!-- GAME -->
+  <section id="game" class="section alt">
+    <div class="section-inner">
+      <h2>Juego · mini quiz de data</h2>
+      <p class="section-intro">
+        Un pequeño quiz interactivo para practicar conceptos básicos de datos.
+      </p>
+
+      <div class="card">
+        <button id="open-game" class="primary-btn">Abrir juego</button>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- GAME MODAL -->
+  <div id="game-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-game">×</button>
+      <h3>Mini quiz de Ciencia de Datos</h3>
+      <p id="game-question"></p>
+      <div id="game-options" class="game-options"></div>
+      <p id="game-feedback" class="game-feedback"></p>
+      <button id="next-question" class="ghost-btn small">Siguiente</button>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <h2>Contacto</h2>
+      <p class="section-intro">
+        Si quieres hablar de proyectos, datos, libros o conciertos, aquí me encuentras.
+      </p>
+
+      <div class="card contact-card">
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:nayadevelasco@gmail.com">nayadevelasco@gmail.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Nayavvv" target="_blank">@Nayavvv</a></li>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com/nayavelac" target="_blank">@nayavelac</a></li>
+          <li><strong>Twitter / X:</strong> <a href="https://twitter.com/naya_va2" target="_blank">@naya_va2</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
-    <p>“bueno, ¿qué es lo peor que puede pasar? hazlo”</p>
+    <p>Hecho con datos, café y muchos screenshots de errores.</p>
   </footer>
 
-  <!-- SCRIPTS -->
+  <!-- JS -->
   <script>
-    // TEXTOS DE TRAYECTORIA
-    const eraTexts = {
-      coatepec:
-        "Infancia y adolescencia en Coatepec, Veracruz: familia, escuela, actividades culturales y deportes. Ahí surgió el interés por participar en espacios comunitarios.",
-      xalapa:
-        "Estudios de bachillerato en Xalapa, donde obtuve el Técnico en Tecnologías de la Información y Comunicación. Mayor independencia y acercamiento a áreas cuantitativas.",
-      cdmx_inicio:
-        "Llegada a CDMX para estudiar en el ITAM. Primeros semestres, adaptación a la vida universitaria y decisión de estudiar Ciencia de Datos.",
-      cdmx_actual:
-        "Etapa actual: consolidar la formación en Ciencia de Datos, participar en proyectos estudiantiles, servicio social y construir experiencia en análisis de datos."
-    };
-
     document.addEventListener("DOMContentLoaded", () => {
-      // Trayectoria
-      const eraTextEl = document.getElementById("era-text");
-      const eraButtons = document.querySelectorAll(".era-chip");
-
-      if (eraTextEl) {
-        eraTextEl.textContent = eraTexts["coatepec"];
-      }
-
-      eraButtons.forEach(btn => {
-        btn.addEventListener("click", () => {
-          eraButtons.forEach(b => b.classList.remove("active"));
-          btn.classList.add("active");
-          eraTextEl.textContent = eraTexts[btn.dataset.era];
+      // Navegación suave
+      document.querySelectorAll('header nav a[href^="#"]').forEach(link => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute("href").substring(1);
+          const target = document.getElementById(targetId);
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: "smooth"
+            });
+          }
         });
       });
 
-      // Juego
-      setupGame();
-    });
+      // Frases
+      const quotes = [
+        "Prefiero arrepentirme de cómo salió a arrepentirme de no haberlo hecho.",
+        "Que alguien la pase mal no es justificación para hacer sentir mal a los demás.",
+        "Todo por la anécdota (pero con responsabilidad).",
+        "Siempre, de alguna manera, todo saldrá bien.",
+        "Solo pido un día sin regarla… pero aquí seguimos."
+      ];
+      const quoteText = document.getElementById("quote-text");
+      const quoteBtn = document.getElementById("quote-btn");
 
-    // JUEGO: DATA SORT PUZZLE
-    function setupGame() {
-      const dataValues = [12, 5, 19, 7, 3];
-      let selected = [];
-      let timeLeft = 20;
-      let timerId = null;
-
-      const poolEl = document.getElementById("pool");
-      const targetEl = document.getElementById("target");
-      const timerEl = document.getElementById("timer");
-      const messageEl = document.getElementById("game-message");
-
-      const startBtn = document.getElementById("start-game");
-      const resetBtn = document.getElementById("reset-game");
-      const checkBtn = document.getElementById("check-game");
-
-      const openBtn = document.getElementById("open-game");
-      const modal = document.getElementById("game-modal");
-      const closeBtn = document.querySelector(".modal-close");
-
-      function renderPools() {
-        poolEl.innerHTML = "";
-        targetEl.innerHTML = "";
-
-        dataValues.forEach(val => {
-          if (!selected.includes(val)) {
-            const btn = document.createElement("button");
-            btn.className = "chip-btn";
-            btn.textContent = val;
-            btn.addEventListener("click", () => {
-              selected.push(val);
-              renderPools();
-            });
-            poolEl.appendChild(btn);
+      if (quoteText && quoteBtn) {
+        quoteBtn.addEventListener("click", () => {
+          const current = quoteText.textContent.trim();
+          let next = current;
+          while (next === current) {
+            next = quotes[Math.floor(Math.random() * quotes.length)];
           }
+          quoteText.textContent = next;
         });
+      }
 
-        selected.forEach(val => {
-          const span = document.createElement("span");
-          span.className = "chip-selected";
-          span.textContent = val;
-          span.addEventListener("click", () => {
-            // si clicas uno seleccionado, lo regresas
-            selected = selected.filter(v => v !== val);
-            renderPools();
+      // Juego simple de data
+      const questions = [
+        {
+          q: "¿Qué es un DataFrame en Python (Pandas)?",
+          options: [
+            "Una tabla de datos con filas y columnas.",
+            "Un tipo de gráfico de barras.",
+            "Un archivo comprimido de datos.",
+            "Una función para entrenar modelos."
+          ],
+          correct: 0
+        },
+        {
+          q: "¿Qué hace una consulta SQL con SELECT?",
+          options: [
+            "Elimina datos de una tabla.",
+            "Selecciona columnas o filas de una tabla.",
+            "Crea una nueva base de datos.",
+            "Cifra información sensible."
+          ],
+          correct: 1
+        },
+        {
+          q: "¿Qué significa ETL en datos?",
+          options: [
+            "Extract, Transform, Load.",
+            "Encode, Transfer, Log.",
+            "Estimate, Test, Learn.",
+            "Error, Timeout, Loop."
+          ],
+          correct: 0
+        },
+        {
+          q: "¿Qué es un outlier?",
+          options: [
+            "Un valor que sigue exactamente la media.",
+            "Un valor que está muy alejado del resto de los datos.",
+            "Un tipo de modelo supervisado.",
+            "Una métrica de evaluación."
+          ],
+          correct: 1
+        }
+      ];
+
+      const gameModal = document.getElementById("game-modal");
+      const openGame = document.getElementById("open-game");
+      const closeGame = document.getElementById("close-game");
+      const qText = document.getElementById("game-question");
+      const qOptions = document.getElementById("game-options");
+      const qFeedback = document.getElementById("game-feedback");
+      const nextBtn = document.getElementById("next-question");
+
+      let currentIndex = 0;
+      let answered = false;
+
+      function renderQuestion() {
+        const q = questions[currentIndex];
+        qText.textContent = q.q;
+        qOptions.innerHTML = "";
+        qFeedback.textContent = "";
+        answered = false;
+
+        q.options.forEach((opt, idx) => {
+          const btn = document.createElement("button");
+          btn.className = "ghost-btn small option-btn";
+          btn.textContent = opt;
+          btn.addEventListener("click", () => {
+            if (answered) return;
+            answered = true;
+            if (idx === q.correct) {
+              qFeedback.textContent = "✔ Respuesta correcta.";
+              qFeedback.className = "game-feedback ok";
+            } else {
+              qFeedback.textContent = "✖ No es esa. Intenta leer la pregunta como si fuera examen.";
+              qFeedback.className = "game-feedback error";
+            }
           });
-          targetEl.appendChild(span);
+          qOptions.appendChild(btn);
         });
       }
 
-      function resetGame() {
-        selected = [];
-        timeLeft = 20;
-        timerEl.textContent = timeLeft;
-        clearInterval(timerId);
-        timerId = null;
-        messageEl.textContent = "";
-        renderPools();
+      if (openGame && gameModal) {
+        openGame.addEventListener("click", () => {
+          gameModal.classList.add("visible");
+          currentIndex = 0;
+          renderQuestion();
+        });
       }
 
-      function startTimer() {
-        if (timerId) return;
-        timerId = setInterval(() => {
-          timeLeft--;
-          timerEl.textContent = timeLeft;
-          if (timeLeft <= 0) {
-            clearInterval(timerId);
-            timerId = null;
-            messageEl.textContent = "Tiempo agotado. Puedes reiniciar y volver a intentarlo.";
-          }
-        }, 1000);
+      if (closeGame) {
+        closeGame.addEventListener("click", () => {
+          gameModal.classList.remove("visible");
+        });
       }
 
-      function checkResult() {
-        if (selected.length !== dataValues.length) {
-          messageEl.textContent = "Selecciona todos los números antes de revisar.";
-          return;
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          currentIndex = (currentIndex + 1) % questions.length;
+          renderQuestion();
+        });
+      }
+
+      gameModal?.addEventListener("click", (e) => {
+        if (e.target === gameModal) {
+          gameModal.classList.remove("visible");
         }
-        const sorted = [...dataValues].sort((a, b) => a - b);
-        const ok = sorted.every((v, i) => v === selected[i]);
-        if (ok) {
-          messageEl.textContent = "Datos ordenados correctamente. ✔";
-        } else {
-          messageEl.textContent = "El orden no es correcto. Intenta de nuevo.";
-        }
-      }
-
-      // Modal handlers
-      if (openBtn && modal && closeBtn) {
-        openBtn.addEventListener("click", () => {
-          modal.classList.add("open");
-          resetGame();
-        });
-
-        closeBtn.addEventListener("click", () => {
-          modal.classList.remove("open");
-          clearInterval(timerId);
-          timerId = null;
-        });
-
-        modal.addEventListener("click", (e) => {
-          if (e.target === modal) {
-            modal.classList.remove("open");
-            clearInterval(timerId);
-            timerId = null;
-          }
-        });
-      }
-
-      if (startBtn) {
-        startBtn.addEventListener("click", () => {
-          resetGame();
-          startTimer();
-        });
-      }
-
-      if (resetBtn) {
-        resetBtn.addEventListener("click", () => {
-          resetGame();
-        });
-      }
-
-      if (checkBtn) {
-        checkBtn.addEventListener("click", () => {
-          checkResult();
-        });
-      }
-
-      renderPools();
-    }
+      });
+    });
   </script>
-
 </body>
 </html>
