@@ -471,6 +471,61 @@
         gameMsg.textContent = "Nuevo número listo. Empieza cuando quieras.";
       });
     }
+
+    // GALERÍA / LIGHTBOX
+
+const galleryPhotos = [
+  { src: "img/photo1.jpg", caption: "Guts Gallery — instalación artística" },
+  { src: "img/photo2.jpg", caption: "Cancha de tenis — Universidad Veracruzana" },
+  { src: "img/photo3.jpg", caption: "Taylor Swift — The Eras Tour · CDMX" },
+  { src: "img/photo4.jpg", caption: "Paseo con mis perros" },
+  { src: "img/photo5.jpg", caption: "Cascada en Xico, Veracruz" },
+  { src: "img/photo6.jpg", caption: "Pared de escalada" },
+  { src: "img/photo7.jpg", caption: "Cineteca Nacional · CDMX" },
+  { src: "img/photo8.jpg", caption: "Templo barroco en Tepotzotlán" },
+  { src: "img/photo9.jpg", caption: "Farah — el gato del ITAM" },
+  { src: "img/photo10.jpg", caption: "Puente colgante — Veracruz" }
+];
+
+let currentPhotoIndex = 0;
+
+function renderPhoto(index) {
+  const lightbox = document.getElementById("lightbox");
+  const imgEl = document.getElementById("lightbox-image");
+  const captionEl = document.getElementById("lightbox-caption");
+
+  const photo = galleryPhotos[index];
+  imgEl.src = photo.src;
+  imgEl.alt = photo.caption;
+  captionEl.textContent = photo.caption;
+
+  lightbox.style.display = "flex";
+  currentPhotoIndex = index;
+}
+
+function openGallery(index) {
+  renderPhoto(index);
+}
+
+function closeGallery() {
+  document.getElementById("lightbox").style.display = "none";
+}
+
+function nextPhoto() {
+  currentPhotoIndex = (currentPhotoIndex + 1) % galleryPhotos.length;
+  renderPhoto(currentPhotoIndex);
+}
+
+function prevPhoto() {
+  currentPhotoIndex = (currentPhotoIndex - 1 + galleryPhotos.length) % galleryPhotos.length;
+  renderPhoto(currentPhotoIndex);
+}
+
+// cerrar lightbox clickeando afuera
+document.getElementById("lightbox").addEventListener("click", (e) => {
+  if (e.target.id === "lightbox") closeGallery();
+});
+
   </script>
 </body>
 </html>
