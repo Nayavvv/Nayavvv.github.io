@@ -2,407 +2,584 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Naya Velasco | Data Science student</title>
+  <title>Naya Velasco | Data Science Student</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Google Fonts -->
+  <!-- Fuente Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- ░░░ TOPBAR / NAV ░░░ -->
+  <!-- TOPBAR -->
   <header class="topbar">
     <div class="brand">
-      <div class="avatar-circle">NV</div>
-      <div>
+      <span class="brand-initials">NV</span>
+      <div class="brand-text">
         <div class="brand-name">Naya Velasco</div>
-        <div class="brand-sub">Data Science · ITAM · Coatepec → CDMX</div>
+        <div class="brand-sub">Data Science · ITAM · CDMX</div>
       </div>
     </div>
 
-    <nav class="nav-links">
-      <a href="#hero">inicio</a>
-      <a href="#skills">skills</a>
-      <a href="#projects">proyectos</a>
-      <a href="#stats">stats</a>
-      <a href="#music">música</a>
-      <a href="#eras">trayectoria</a>
-      <a href="#fun-facts">sobre mí</a>
-      <a href="#photos">fotos</a>
-      <a href="#contact">contacto</a>
+    <nav class="nav">
+      <a href="#hero">Inicio</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#stats">Stats</a>
+      <a href="#music">Música</a>
+      <a href="#eras">Trayectoria</a>
+      <a href="#profile">Perfil</a>
+      <a href="#photos">Fotos</a>
+      <a href="#game">Juego</a>
+      <a href="#contact">Contacto</a>
     </nav>
   </header>
 
   <main>
 
-    <!-- ░░░ HERO ░░░ -->
-    <section id="hero" class="hero clean-hero">
-  <div class="hero-inner">
+    <!-- HERO -->
+    <section id="hero" class="clean-hero">
+      <div class="hero-inner">
+        <p class="hero-chip">Data Science · ITAM · CDMX</p>
 
-    <p class="hero-chip">Data Science · ITAM · CDMX</p>
+        <h1 class="hero-title">Naya Velasco</h1>
+        <p class="hero-subtitle">Data Science Student @ ITAM</p>
 
-    <h1 class="hero-title">Naya Velasco</h1>
+        <p class="hero-desc">
+          Estudiante de Ciencia de Datos con formación técnica en Tecnologías de la Información
+          y Comunicación y experiencia en análisis, bases de datos y sistemas distribuidos.
+          Me interesa desarrollar soluciones donde los datos ayuden a comprender problemas
+          reales y comunicar resultados con claridad.
+        </p>
 
-    <p class="hero-subtitle">Data Science Student @ ITAM</p>
+        <p class="hero-desc">
+          Trabajo principalmente con Python, SQL, PySpark y herramientas de análisis para
+          transformar información en observaciones útiles.
+        </p>
 
-    <p class="hero-desc">
-      Estudiante de Ciencia de Datos con formación técnica en Tecnologías de la 
-      Información y experiencia en análisis, modelado, bases de datos y 
-      sistemas distribuidos. Me interesa desarrollar soluciones donde los datos 
-      ayudan a comprender problemas reales y comunicar resultados con claridad.
-    </p>
+        <div class="hero-buttons">
+          <a href="mailto:nayadevelasco@gmail.com" class="primary-btn">Contacto</a>
+          <a href="https://github.com/Nayavvv" target="_blank" class="ghost-btn">GitHub</a>
+        </div>
+      </div>
+    </section>
 
-    <p class="hero-desc">
-      Disfruto trabajar con Python, SQL, PySpark y herramientas de análisis para 
-      transformar información en observaciones útiles.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="mailto:nayadevelasco@gmail.com" class="primary-btn">Contacto</a>
-      <a href="https://github.com/Nayavvv" target="_blank" class="ghost-btn">GitHub</a>
-    </div>
-
-  </div>
-</section>
-
-    <!-- ░░░ SKILLS ░░░ -->
+    <!-- SKILLS -->
     <section id="skills" class="section">
-      <h2>Skills <span class="pill">tech side</span></h2>
+      <div class="section-inner">
+        <h2>Skills</h2>
+        <p class="section-intro">
+          Tecnologías y temas con los que trabajo con más frecuencia en la carrera y en proyectos.
+        </p>
 
-      <p class="section-intro">
-        Tecnologías y temas con los que trabajo con más frecuencia en la carrera y en proyectos.
-      </p>
-
-      <div class="skills-grid">
-        <div class="card soft">
-          <h3 class="section-tagline">Lenguajes & consultas</h3>
-          <div class="skill-pill-row">
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">SQL</span>
-            <span class="skill-pill">Bash</span>
-            <span class="skill-pill">HTML + CSS básico</span>
+        <div class="skills-grid">
+          <div class="card">
+            <h3>Lenguajes y consultas</h3>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">SQL</span>
+              <span class="pill">Bash</span>
+              <span class="pill">HTML/CSS básico</span>
+            </div>
           </div>
-        </div>
 
-        <div class="card soft">
-          <h3 class="section-tagline">Herramientas & ecosistema</h3>
-          <div class="skill-pill-row">
-            <span class="skill-pill">Git & GitHub</span>
-            <span class="skill-pill">VS Code / Cursor</span>
-            <span class="skill-pill">Jupyter</span>
-            <span class="skill-pill">Pandas</span>
-            <span class="skill-pill">NumPy</span>
-            <span class="skill-pill">PySpark</span>
-            <span class="skill-pill">Hadoop · MapReduce</span>
-            <span class="skill-pill">Cassandra · MongoDB</span>
+          <div class="card">
+            <h3>Herramientas y ecosistema</h3>
+            <div class="pill-row">
+              <span class="pill">Git & GitHub</span>
+              <span class="pill">VS Code / Cursor</span>
+              <span class="pill">Jupyter</span>
+              <span class="pill">Pandas</span>
+              <span class="pill">NumPy</span>
+              <span class="pill">PySpark</span>
+              <span class="pill">Hadoop · MapReduce</span>
+              <span class="pill">Cassandra · MongoDB</span>
+            </div>
           </div>
-        </div>
 
-        <div class="card soft">
-          <h3 class="section-tagline">Áreas de interés</h3>
-          <div class="skill-pill-row">
-            <span class="skill-pill">Análisis de datos</span>
-            <span class="skill-pill">Machine learning básico</span>
-            <span class="skill-pill">Sistemas distribuidos</span>
-            <span class="skill-pill">Visualización</span>
-            <span class="skill-pill">Storytelling con datos</span>
-            <span class="skill-pill">Educación & comunidad</span>
+          <div class="card">
+            <h3>Áreas de interés</h3>
+            <div class="pill-row">
+              <span class="pill">Análisis de datos</span>
+              <span class="pill">Machine learning básico</span>
+              <span class="pill">Sistemas distribuidos</span>
+              <span class="pill">Visualización</span>
+              <span class="pill">Storytelling con datos</span>
+              <span class="pill">Educación y comunidad</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ░░░ PROYECTOS ░░░ -->
+    <!-- PROYECTOS -->
     <section id="projects" class="section alt">
-      <h2>Proyectos <span class="pill">experiencia</span></h2>
+      <div class="section-inner">
+        <h2>Proyectos</h2>
+        <p class="section-intro">
+          Una vista rápida de algunos ámbitos en los que he trabajado y participado.
+        </p>
 
-      <div class="cards-grid">
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Big Data y PySpark</h3>
+            <p>
+              Prácticas con PySpark y Hadoop para procesar conjuntos de datos grandes:
+              lectura, limpieza básica, agregaciones y cálculo de métricas.
+            </p>
+          </article>
 
-        <article class="card">
-          <h3 class="section-tagline">Big data & PySpark</h3>
-          <p>
-            Prácticas con <strong>PySpark</strong> y <strong>Hadoop</strong> para procesar
-            conjuntos de datos grandes: lectura desde archivos, limpieza básica,
-            agregaciones y cálculo de métricas.
-          </p>
-        </article>
+          <article class="card">
+            <h3>Análisis y limpieza de datos</h3>
+            <p>
+              Proyectos en Python (Pandas, NumPy) y SQL para preparar datos, generar
+              descripciones estadísticas, crear visualizaciones sencillas y presentar hallazgos.
+            </p>
+          </article>
 
-        <article class="card">
-          <h3 class="section-tagline">Análisis & limpieza de datos</h3>
-          <p>
-            Proyectos en <strong>Python (Pandas, NumPy)</strong> y <strong>SQL</strong> para
-            preparar datos, generar descripciones estadísticas, crear visualizaciones
-            sencillas y presentar hallazgos.
-          </p>
-        </article>
+          <article class="card">
+            <h3>Representación FOE (B1T)</h3>
+            <p>
+              Representante ante la FOE para la División de Ciencias de la Computación.
+              Participación en actividades de representación estudiantil y comunicación con la facultad.
+            </p>
+          </article>
 
-        <article class="card">
-          <h3 class="section-tagline">Representación FOE (B1T)</h3>
-          <p>
-            Representante ante la FOE para la División de Ciencias de la Computación.
-            Participación en actividades de representación estudiantil,
-            coordinación con otros estudiantes y comunicación con la facultad.
-          </p>
-        </article>
+          <article class="card">
+            <h3>El Supuesto</h3>
+            <p>
+              Editora junior en <em>El Supuesto</em>, el periódico escolar del ITAM.
+              Textos publicados en las secciones de Nacional y Cultura.
+            </p>
+          </article>
 
-        <article class="card">
-          <h3 class="section-tagline">El Supuesto</h3>
-          <p>
-            Editora junior en <em>El Supuesto</em>, el periódico escolar del ITAM.
-            Colaboración en textos publicados en las secciones de
-            <strong>Nacional</strong> y <strong>Cultura</strong>.
-          </p>
-        </article>
-
+          <article class="card">
+            <h3>Servicio social – Crecemos Leyendo</h3>
+            <p>
+              Servicio social con niñas y niños de sexto de primaria, acompañando procesos de lectura,
+              comprensión y actividades académicas en un contexto educativo.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- ░░░ GITHUB STATS (SIN IMÁGENES ROTAS) ░░░ -->
+    <!-- STATS -->
     <section id="stats" class="section">
-      <h2>GitHub stats <span class="pill">actividad</span></h2>
+      <div class="section-inner">
+        <h2>Stats</h2>
+        <p class="section-intro">
+          Un resumen visual de las herramientas que uso más seguido.
+        </p>
 
-      <div class="stats-grid">
-        <div class="card soft">
-          <h3 class="section-tagline">Actividad reciente</h3>
-          <p>
-            Mi actividad en GitHub se concentra en repositorios de la carrera y
-            proyectos personales relacionados con análisis de datos y sistemas
-            distribuidos.
-          </p>
-          <ul class="fun-list">
-            <li>Repositorio de esta página: <strong>Nayavvv.github.io</strong>.</li>
-            <li>Ejercicios con PySpark, Hadoop y bases de datos no relacionales.</li>
-            <li>Scripts de limpieza y exploración de datos en Python.</li>
+        <div class="stats-grid">
+          <div class="card">
+            <h3>Lenguajes que uso con mayor frecuencia</h3>
+
+            <div class="stat-row">
+              <span>Python</span>
+              <div class="stat-bar">
+                <div style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="stat-row">
+              <span>SQL</span>
+              <div class="stat-bar">
+                <div style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <div class="stat-row">
+              <span>PySpark</span>
+              <div class="stat-bar">
+                <div style="width: 55%;"></div>
+              </div>
+            </div>
+
+            <div class="stat-row">
+              <span>Bash / Shell</span>
+              <div class="stat-bar">
+                <div style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Actividad</h3>
+            <p>
+              La mayor parte de mi actividad en GitHub se concentra en:
+            </p>
+            <ul class="simple-list">
+              <li>Repositorios de la carrera en Ciencia de Datos.</li>
+              <li>Prácticas con PySpark, Hadoop y bases de datos no relacionales.</li>
+              <li>Scripts de limpieza y exploración de datos en Python.</li>
+            </ul>
+            <p>
+              Perfil completo:
+              <a href="https://github.com/Nayavvv" target="_blank">github.com/Nayavvv</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÚSICA -->
+    <section id="music" class="section alt">
+      <div class="section-inner">
+        <h2>Música</h2>
+        <p class="section-intro">
+          Una de las playlists que suelo usar de fondo mientras trabajo o estudio.
+        </p>
+
+        <div class="card">
+          <iframe style="border-radius:16px"
+            src="https://open.spotify.com/embed/playlist/7h3JjZPfcLkqbsNyIl9NwR?utm_source=generator"
+            width="100%" height="160" frameborder="0" allow="autoplay; encrypted-media">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAYECTORIA -->
+    <section id="eras" class="section">
+      <div class="section-inner">
+        <h2>Trayectoria</h2>
+        <p class="section-intro">
+          Breve contexto de cómo llegué a estudiar Ciencia de Datos en CDMX.
+        </p>
+
+        <div class="eras-chips">
+          <button class="era-chip active" data-era="coatepec">Coatepec</button>
+          <button class="era-chip" data-era="xalapa">Xalapa</button>
+          <button class="era-chip" data-era="cdmx_inicio">CDMX (inicio)</button>
+          <button class="era-chip" data-era="cdmx_actual">CDMX (actual)</button>
+        </div>
+
+        <div class="card era-panel">
+          <p id="era-text"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFIL -->
+    <section id="profile" class="section alt">
+      <div class="section-inner">
+        <h2>Perfil</h2>
+        <p class="section-intro">
+          Algunos datos personales y actividades que me han acompañado en el camino.
+        </p>
+
+        <div class="card">
+          <ul class="simple-list">
+            <li>Me gusta capturar momentos y pequeños detalles, especialmente a través de fotos.</li>
+            <li>Disfruto asistir a conciertos y experiencias en vivo.</li>
+            <li>Fui declamadora y oradora durante primaria y secundaria.</li>
+            <li>Participé en SIPINNA en mi municipio.</li>
+            <li>He practicado diversos deportes: nado sincronizado, taekwondo, ballet, atletismo, danza y tenis.</li>
+            <li>Realizo servicio social con niñas y niños en programas de acompañamiento académico y lectura.</li>
           </ul>
         </div>
+      </div>
+    </section>
 
-        <div class="card soft">
-          <h3 class="section-tagline">Perfil</h3>
+    <!-- FOTOS / SNAPSHOTS OF LIFE -->
+    <section id="photos" class="photo-section">
+      <h2>SNAPSHOTS OF LIFE</h2>
+      <p class="photo-subtitle">Capturando recuerdos que me acompañan</p>
+
+      <div class="masonry">
+
+        <div class="masonry-item">
+          <img src="img/photo1.jpg" alt="Instalación de arte — luces y reflejos">
+          <span>Instalación de arte — luces y reflejos</span>
+        </div>
+
+        <div class="masonry-item">
+          <img src="img/photo2.jpg" alt="Cancha de tenis — Universidad Veracruzana">
+          <span>Cancha de tenis — Universidad Veracruzana</span>
+        </div>
+
+        <div class="masonry-item">
+          <img src="img/photo3.jpg" alt="Taylor Swift · The Eras Tour · CDMX">
+          <span>Taylor Swift · The Eras Tour · CDMX</span>
+        </div>
+
+        <div class="masonry-item">
+          <img src="img/photo4.jpg" alt="Paseo con mis perros en el campo">
+          <span>Paseo con mis perros en el campo</span>
+        </div>
+
+        <div class="masonry-item">
+          <img src="img/photo5.jpg" alt="Cascada en Xico, Veracruz">
+          <span>Cascada en Xico, Veracruz</span>
+        </div>
+
+        <div class="masonry-item">
+          <img src="img/photo6.jpg" alt="Muro de escalada en CDMX">
+          <span>Muro de escalada en CDMX</span>
+        </div>
+
+        <div class="masonry-item">
+          <img src="img/photo7.jpg" alt="Cineteca Nacional — CDMX">
+          <span>Cineteca Nacional — CDMX</span>
+        </div>
+
+        <div class="masonry-item">
+          <img src="img/photo8.jpg" alt="Templo barroco de Tepotzotlán">
+          <span>Templo barroco de Tepotzotlán</span>
+        </div>
+
+        <div class="masonry-item">
+          <img src="img/photo9.jpg" alt="Farah, el gato del ITAM">
+          <span>Farah, el gato del ITAM</span>
+        </div>
+
+        <div class="masonry-item">
+          <img src="img/photo10.jpg" alt="Puente colgante en la naturaleza">
+          <span>Puente colgante en la naturaleza</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- JUEGO INTERACTIVO -->
+    <section id="game" class="section">
+      <div class="section-inner">
+        <h2>Juego</h2>
+        <p class="section-intro">
+          Pequeño ejercicio interactivo para ordenar datos de forma sencilla.
+        </p>
+
+        <div class="card">
           <p>
-            Para ver repositorios públicos, contribuciones y lenguajes más usados,
-            puedes visitar directamente mi perfil:
+            <strong>Data Sort Puzzle:</strong> elige los números en el orden correcto
+            (de menor a mayor). Es una forma simple de representar la idea de
+            ordenar datos.
           </p>
-          <p>
-            <a href="https://github.com/Nayavvv" target="_blank">
-              github.com/Nayavvv
-            </a>
-          </p>
+          <button id="open-game" class="primary-btn small">Abrir juego</button>
         </div>
       </div>
     </section>
 
-    <!-- ░░░ MÚSICA ░░░ -->
-    <section id="music" class="section alt">
-      <h2>Música <span class="pill">lo que escucho al trabajar</span></h2>
+    <!-- MODAL DEL JUEGO -->
+    <div id="game-modal" class="modal">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <h3>Data Sort Puzzle</h3>
+        <p>
+          Haz clic en los números de la columna izquierda para construir tu orden
+          en la columna derecha. Cuando termines, presiona “Revisar”.
+        </p>
 
-      <iframe style="border-radius:16px"
-        src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhn9wzrS?utm_source=generator"
-        width="100%" height="160" frameBorder="0" allow="autoplay; encrypted-media">
-      </iframe>
-    </section>
-
-    <!-- ░░░ ERAS / TRAYECTORIA ░░░ -->
-    <section id="eras" class="section">
-      <h2>Trayectoria <span class="pill">mini timeline</span></h2>
-      <p class="section-intro">
-        Breve contexto de cómo llegué a estudiar Ciencia de Datos en CDMX.
-      </p>
-
-      <div class="eras-chips">
-        <button class="era-chip active" data-era="coatepec">Coatepec</button>
-        <button class="era-chip" data-era="xalapa">Xalapa</button>
-        <button class="era-chip" data-era="cdmx_adapt">CDMX (inicio)</button>
-        <button class="era-chip" data-era="cdmx_survival">CDMX (actual)</button>
-      </div>
-
-      <div class="card soft era-panel">
-        <p id="era-text"></p>
-      </div>
-    </section>
-
-    <!-- ░░░ SOBRE MÍ ░░░ -->
-    <section id="fun-facts" class="section alt">
-      <h2>Sobre mí <span class="pill">quick snapshot</span></h2>
-
-      <div class="funfacts-layout">
-
-        <div class="fun-box">
-          <p class="section-intro">Frase al azar:</p>
-          <div class="quote-widget">
-            <div id="random-quote" class="quote-text"></div>
+        <div class="game-layout">
+          <div class="game-column">
+            <h4>Datos desordenados</h4>
+            <div id="pool" class="game-pool"></div>
           </div>
-          <button class="fun-btn" onclick="showRandomQuote()">otra frase</button>
+          <div class="game-column">
+            <h4>Tu orden</h4>
+            <div id="target" class="game-pool"></div>
+          </div>
         </div>
 
-        <ul class="fun-list card soft">
-          <li>Originaria de Coatepec, Veracruz; actualmente vivo en CDMX.</li>
-          <li>Fui declamadora y oradora en primaria y secundaria.</li>
-          <li>Participé en SIPINNA en mi municipio.</li>
-          <li>He practicado varios deportes: natación, ballet, atletismo, tenis y más.</li>
-          <li>Servicio social en programas de acompañamiento a niñas y niños.</li>
-          <li>Me interesa combinar datos, educación y proyectos con impacto social.</li>
-        </ul>
+        <div class="game-controls">
+          <span>Tiempo: <span id="timer">20</span>s</span>
+          <div class="game-buttons">
+            <button id="start-game" class="primary-btn small">Iniciar</button>
+            <button id="reset-game" class="ghost-btn small">Reiniciar</button>
+            <button id="check-game" class="ghost-btn small">Revisar</button>
+          </div>
+        </div>
 
+        <p id="game-message" class="game-message"></p>
       </div>
-    </section>
-
-    <!-- ░░░ PHOTODUMPS ░░░ -->
-<section id="photos" class="photo-section">
-    <h2>SNAPSHOTS OF LIFE</h2>
-    <p class="photo-subtitle">Capturando recuerdos que me acompañan</p>
-
-    <div class="masonry">
-
-        <div class="masonry-item">
-            <img src="img/photo1.jpg" alt="Instalación de arte — luces y reflejos">
-            <span>Guts Gallery</span>
-        </div>
-
-        <div class="masonry-item">
-            <img src="img/photo2.jpg" alt="Cancha de tenis — Universidad Veracruzana">
-            <span>Cancha de tenis — Universidad Veracruzana</span>
-        </div>
-
-        <div class="masonry-item">
-            <img src="img/photo3.jpg" alt="Taylor Swift · The Eras Tour · CDMX">
-            <span>Taylor Swift · The Eras Tour · CDMX</span>
-        </div>
-
-        <div class="masonry-item">
-            <img src="img/photo4.jpg" alt="Paseo con mis perros en el campo">
-            <span>Paseo con mis perros en el campo</span>
-        </div>
-
-        <div class="masonry-item">
-            <img src="img/photo5.jpg" alt="Cascada en Xico, Veracruz">
-            <span>Cascada en Xico, Veracruz</span>
-        </div>
-
-        <div class="masonry-item">
-            <img src="img/photo6.jpg" alt="Muro de escalada en CDMX">
-            <span>Muro de escalada en CDMX</span>
-        </div>
-
-        <div class="masonry-item">
-            <img src="img/photo7.jpg" alt="Cineteca Nacional — CDMX">
-            <span>Cineteca Nacional — CDMX</span>
-        </div>
-
-        <div class="masonry-item">
-            <img src="img/photo8.jpg" alt="Templo barroco de Tepotzotlán">
-            <span>Templo barroco de Tepotzotlán</span>
-        </div>
-
-        <div class="masonry-item">
-            <img src="img/photo9.jpg" alt="Farah, el gato del ITAM">
-            <span>Farah, el gato del ITAM</span>
-        </div>
-
-        <div class="masonry-item">
-            <img src="img/photo10.jpg" alt="Puente colgante en la naturaleza">
-            <span>Puente colgante en la naturaleza</span>
-        </div>
-
     </div>
-</section>
 
-    <!-- ░░░ CONTACTO ░░░ -->
-    <section id="contact" class="section">
-      <h2>Contacto <span class="pill">say hi</span></h2>
-
-      <div class="contact-box card soft">
-        <p><strong>Email:</strong> <a href="mailto:nayadevelasco@gmail.com">nayadevelasco@gmail.com</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Nayavvv">github.com/Nayavvv</a></p>
-        <p><strong>Instagram:</strong> <a href="https://instagram.com/nayavelac">@nayavelac</a></p>
-        <p><strong>Twitter/X:</strong> <a href="https://twitter.com/naya_va2">@naya_va2</a></p>
+    <!-- CONTACTO -->
+    <section id="contact" class="section alt">
+      <div class="section-inner">
+        <h2>Contacto</h2>
+        <div class="card">
+          <p><strong>Email:</strong> <a href="mailto:nayadevelasco@gmail.com">nayadevelasco@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/Nayavvv" target="_blank">github.com/Nayavvv</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/nayavelac" target="_blank">@nayavelac</a></p>
+          <p><strong>Twitter/X:</strong> <a href="https://twitter.com/naya_va2" target="_blank">@naya_va2</a></p>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
-    <p class="motto">“bueno, ¿qué es lo peor que puede pasar? hazlo”</p>
-    <p class="footer-small">portafolio pastel orientado a datos 💙</p>
+    <p>“bueno, ¿qué es lo peor que puede pasar? hazlo”</p>
   </footer>
 
   <!-- SCRIPTS -->
   <script>
-    /* FRASES RANDOM - ahora más profesionales */
-    const quotes = [
-      "Me interesa que los datos cuenten algo útil para las personas.",
-      "Siempre hay algo nuevo que aprender en cada proyecto.",
-      "Los detalles importan tanto como las grandes ideas.",
-      "Prefiero construir cosas que se puedan usar en la vida real."
-    ];
-
-    function showRandomQuote() {
-      const q = document.getElementById("random-quote");
-      q.textContent = quotes[Math.floor(Math.random() * quotes.length)];
-    }
-
-    /* ERAS / TRAYECTORIA */
+    // TEXTOS DE TRAYECTORIA
     const eraTexts = {
       coatepec:
-        "Infancia y adolescencia en Coatepec, Veracruz: familia, escuela, actividades culturales y deportes. Ahí surgió mi interés por participar en espacios comunitarios.",
+        "Infancia y adolescencia en Coatepec, Veracruz: familia, escuela, actividades culturales y deportes. Ahí surgió el interés por participar en espacios comunitarios.",
       xalapa:
-        "Estudios de preparatoria en Xalapa, capital de Veracruz. Más independencia, nuevas materias y el inicio del interés por áreas cuantitativas.",
-      cdmx_adapt:
-        "Llegada a CDMX para estudiar en el ITAM. Primeros semestres, adaptación a la vida universitaria y a la ciudad, y elección de Ciencia de Datos como carrera.",
-      cdmx_survival:
-        "Etapa actual: consolidar la formación en Ciencia de Datos, participar en proyectos estudiantiles, servicio social y seguir construyendo experiencia en análisis de datos."
+        "Estudios de bachillerato en Xalapa, donde obtuve el Técnico en Tecnologías de la Información y Comunicación. Mayor independencia y acercamiento a áreas cuantitativas.",
+      cdmx_inicio:
+        "Llegada a CDMX para estudiar en el ITAM. Primeros semestres, adaptación a la vida universitaria y decisión de estudiar Ciencia de Datos.",
+      cdmx_actual:
+        "Etapa actual: consolidar la formación en Ciencia de Datos, participar en proyectos estudiantiles, servicio social y construir experiencia en análisis de datos."
     };
 
-    /* CARRUSEL */
-    let slideIndex = 0;
-
     document.addEventListener("DOMContentLoaded", () => {
-      showRandomQuote();
-      setupEras();
-      setupCarousel();
-    });
+      // Trayectoria
+      const eraTextEl = document.getElementById("era-text");
+      const eraButtons = document.querySelectorAll(".era-chip");
 
-    function setupEras() {
-      const text = document.getElementById("era-text");
-      const buttons = document.querySelectorAll(".era-chip");
-
-      text.textContent = eraTexts["coatepec"];
-
-      buttons.forEach(btn => {
-        btn.addEventListener("click", () => {
-          buttons.forEach(b => b.classList.remove("active"));
-          btn.classList.add("active");
-          text.textContent = eraTexts[btn.dataset.era];
-        });
-      });
-    }
-
-    function setupCarousel() {
-      const slides = document.querySelectorAll(".carousel-slide");
-      const dots = document.querySelectorAll(".carousel-dots button");
-
-      function goToSlide(n) {
-        slides.forEach((s, i) => s.classList.toggle("active", i === n));
-        dots.forEach((d, i) => d.classList.toggle("active", i === n));
-        slideIndex = n;
+      if (eraTextEl) {
+        eraTextEl.textContent = eraTexts["coatepec"];
       }
 
-      document.querySelector(".carousel-btn.next").onclick = () =>
-        goToSlide((slideIndex + 1) % slides.length);
+      eraButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          eraButtons.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          eraTextEl.textContent = eraTexts[btn.dataset.era];
+        });
+      });
 
-      document.querySelector(".carousel-btn.prev").onclick = () =>
-        goToSlide((slideIndex - 1 + slides.length) % slides.length);
+      // Juego
+      setupGame();
+    });
 
-      dots.forEach(d =>
-        d.addEventListener("click", () => goToSlide(parseInt(d.dataset.index)))
-      );
+    // JUEGO: DATA SORT PUZZLE
+    function setupGame() {
+      const dataValues = [12, 5, 19, 7, 3];
+      let selected = [];
+      let timeLeft = 20;
+      let timerId = null;
 
-      setInterval(() => goToSlide((slideIndex + 1) % slides.length), 6000);
+      const poolEl = document.getElementById("pool");
+      const targetEl = document.getElementById("target");
+      const timerEl = document.getElementById("timer");
+      const messageEl = document.getElementById("game-message");
+
+      const startBtn = document.getElementById("start-game");
+      const resetBtn = document.getElementById("reset-game");
+      const checkBtn = document.getElementById("check-game");
+
+      const openBtn = document.getElementById("open-game");
+      const modal = document.getElementById("game-modal");
+      const closeBtn = document.querySelector(".modal-close");
+
+      function renderPools() {
+        poolEl.innerHTML = "";
+        targetEl.innerHTML = "";
+
+        dataValues.forEach(val => {
+          if (!selected.includes(val)) {
+            const btn = document.createElement("button");
+            btn.className = "chip-btn";
+            btn.textContent = val;
+            btn.addEventListener("click", () => {
+              selected.push(val);
+              renderPools();
+            });
+            poolEl.appendChild(btn);
+          }
+        });
+
+        selected.forEach(val => {
+          const span = document.createElement("span");
+          span.className = "chip-selected";
+          span.textContent = val;
+          span.addEventListener("click", () => {
+            // si clicas uno seleccionado, lo regresas
+            selected = selected.filter(v => v !== val);
+            renderPools();
+          });
+          targetEl.appendChild(span);
+        });
+      }
+
+      function resetGame() {
+        selected = [];
+        timeLeft = 20;
+        timerEl.textContent = timeLeft;
+        clearInterval(timerId);
+        timerId = null;
+        messageEl.textContent = "";
+        renderPools();
+      }
+
+      function startTimer() {
+        if (timerId) return;
+        timerId = setInterval(() => {
+          timeLeft--;
+          timerEl.textContent = timeLeft;
+          if (timeLeft <= 0) {
+            clearInterval(timerId);
+            timerId = null;
+            messageEl.textContent = "Tiempo agotado. Puedes reiniciar y volver a intentarlo.";
+          }
+        }, 1000);
+      }
+
+      function checkResult() {
+        if (selected.length !== dataValues.length) {
+          messageEl.textContent = "Selecciona todos los números antes de revisar.";
+          return;
+        }
+        const sorted = [...dataValues].sort((a, b) => a - b);
+        const ok = sorted.every((v, i) => v === selected[i]);
+        if (ok) {
+          messageEl.textContent = "Datos ordenados correctamente. ✔";
+        } else {
+          messageEl.textContent = "El orden no es correcto. Intenta de nuevo.";
+        }
+      }
+
+      // Modal handlers
+      if (openBtn && modal && closeBtn) {
+        openBtn.addEventListener("click", () => {
+          modal.classList.add("open");
+          resetGame();
+        });
+
+        closeBtn.addEventListener("click", () => {
+          modal.classList.remove("open");
+          clearInterval(timerId);
+          timerId = null;
+        });
+
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.classList.remove("open");
+            clearInterval(timerId);
+            timerId = null;
+          }
+        });
+      }
+
+      if (startBtn) {
+        startBtn.addEventListener("click", () => {
+          resetGame();
+          startTimer();
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener("click", () => {
+          resetGame();
+        });
+      }
+
+      if (checkBtn) {
+        checkBtn.addEventListener("click", () => {
+          checkResult();
+        });
+      }
+
+      renderPools();
     }
   </script>
 
