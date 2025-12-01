@@ -645,3 +645,64 @@ main {
     right: 4px;
   }
 }
+/* SECTION: SNAPSHOTS OF LIFE — Masonry Layout */
+
+.photo-section {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.photo-section h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.photo-subtitle {
+    text-align: center;
+    color: #6b6b6b;
+    margin-bottom: 35px;
+}
+
+.masonry {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 10px 40px;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.masonry-item img {
+    width: 100%;
+    border-radius: 8px;  /* esquinas suaves */
+    display: block;
+}
+
+.masonry-item span {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Fade-in suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .masonry { column-count: 2; }
+}
+
+@media (max-width: 600px) {
+    .masonry { column-count: 1; }
+}
