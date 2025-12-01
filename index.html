@@ -2,175 +2,155 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <title>Naya Velasco | Data Science Student</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naya Velasco | Data Science student</title>
-
-  <!-- Fuente -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <!-- NAVBAR -->
-  <header id="top-nav">
+  <header class="top-nav">
     <div class="brand">
       <div class="brand-initials">NV</div>
       <div class="brand-text">
         <span class="brand-name">Naya Velasco</span>
-        <span class="brand-sub">Data Science student @ ITAM · Coatepec → CDMX</span>
+        <span class="brand-sub">Data Science Student @ ITAM · Coatepec → CDMX</span>
       </div>
     </div>
-
-    <nav>
+    <nav class="nav-links">
       <a href="#hero">Inicio</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Proyectos</a>
+      <a href="#proyectos">Proyectos</a>
       <a href="#stats">Stats</a>
-      <a href="#music">Música</a>
-      <a href="#journey">Trayectoria</a>
-      <a href="#profile">Perfil</a>
-      <a href="#photos">Fotos</a>
-      <a href="#game">Juego</a>
-      <a href="#contact">Contacto</a>
+      <a href="#musica">Música</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#fotos">Photos</a>
+      <a href="#juego">Juego</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <main>
     <!-- HERO -->
-    <section id="hero" class="card hero">
-      <div class="hero-left">
-        <div class="hero-tags">
-          <span class="pill pill-soft">data science</span>
-          <span class="pill pill-soft">ITAM</span>
-          <span class="pill pill-soft">curiosa por defecto</span>
+    <section id="hero" class="hero">
+      <div class="hero-card">
+        <div class="hero-badge-row">
+          <span class="pill pill-soft">Coatepec</span>
+          <span class="pill pill-soft">Data Science</span>
+          <span class="pill pill-soft">CDMX</span>
         </div>
 
-        <h1>Naya Velasco</h1>
-        <p class="hero-subtitle">Data Science student @ ITAM</p>
+        <h1 class="hero-title">Naya Velasco</h1>
+        <p class="hero-subtitle">Data Science Student @ ITAM</p>
 
         <p class="hero-text">
-          Coatepec → CDMX. Trabajo con datos, código y mini desastres diarios.  
-          Me interesa cómo usar <strong>Python</strong>, <strong>SQL</strong> y herramientas de datos para analizar información,
-          contar historias reales y tomar decisiones informadas.
+          Estudio Ciencia de Datos en el ITAM. Me interesan el análisis cuantitativo,
+          las bases de datos, el procesamiento de información y cómo usar la tecnología
+          para contar historias reales y tomar mejores decisiones.
         </p>
 
         <p class="hero-text">
-          Busco un equilibrio honesto entre estudiar, aprender cosas nuevas, cuidar a mi gente y seguir
-          descubriéndome lejos de casa.
+          Soy foránea de Coatepec, Veracruz, viviendo en CDMX y aprendiendo a equilibrar
+          la carrera, los proyectos, mi familia y mis amigos mientras sigo descubriéndome.
         </p>
 
-        <p class="hero-quote">“Bueno, ¿qué es lo peor que puede pasar? Hazlo.”</p>
-
-        <div class="hero-chips">
-          <span class="chip">#python</span>
-          <span class="chip">#sql</span>
-          <span class="chip">#data</span>
-          <span class="chip">#storytelling</span>
-        </div>
+        <p class="hero-quote">
+          “Siempre aprendiendo, siempre en construcción.”
+        </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:nayadevelasco@gmail.com">Escríbeme</a>
-          <a class="btn btn-ghost" href="https://github.com/Nayavvv" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-
-      <!-- SIN FOTO PERSONAL, SOLO MARCO -->
-      <div class="hero-right">
-        <div class="hero-frame">
-          <div class="hero-frame-inner">
-            <p>Espacio reservado<br />para futuras fotos profesionales.</p>
-          </div>
+          <a href="#contacto" class="btn primary">Escríbeme</a>
+          <a href="https://github.com/Nayavvv" target="_blank" class="btn ghost">
+            GitHub
+          </a>
         </div>
       </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-      <div class="section-header">
-        <h2>Skills · tech side</h2>
-        <p>Herramientas y temas con los que trabajo en la carrera y en proyectos.</p>
-      </div>
+      <h2 class="section-title">Skills · Tech Side</h2>
+      <p class="section-intro">
+        Herramientas y temas con los que trabajo en la carrera y en proyectos personales.
+      </p>
 
-      <div class="skills-grid">
-        <div class="skills-column">
-          <h3>Lenguajes &amp; consultas</h3>
-          <div class="pill-row">
-            <span class="pill">Python</span>
-            <span class="pill">SQL</span>
-            <span class="pill">Bash / terminal</span>
-            <span class="pill">HTML + CSS básico</span>
+      <div class="cards-grid skills-grid">
+        <article class="card">
+          <h3>Lenguajes y Consultas</h3>
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">Pandas · NumPy</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Bash / Terminal</span>
+            <span class="chip">HTML + CSS básico</span>
           </div>
-        </div>
+        </article>
 
-        <div class="skills-column">
-          <h3>Herramientas &amp; ecosistema</h3>
-          <div class="pill-row">
-            <span class="pill">Git &amp; GitHub</span>
-            <span class="pill">VS Code / Cursor</span>
-            <span class="pill">Jupyter</span>
-            <span class="pill">Pandas + NumPy</span>
-            <span class="pill">PySpark</span>
-            <span class="pill">Hadoop · MapReduce</span>
-            <span class="pill">Cassandra · MongoDB</span>
+        <article class="card">
+          <h3>Herramientas y Ecosistema</h3>
+          <div class="chip-row">
+            <span class="chip">Git &amp; GitHub</span>
+            <span class="chip">VS Code / Cursor</span>
+            <span class="chip">Jupyter</span>
+            <span class="chip">PySpark</span>
+            <span class="chip">Hadoop · MapReduce</span>
+            <span class="chip">Cassandra · MongoDB</span>
           </div>
-        </div>
+        </article>
 
-        <div class="skills-column">
-          <h3>Intereses</h3>
-          <div class="pill-row">
-            <span class="pill">Análisis de datos</span>
-            <span class="pill">Machine learning básico</span>
-            <span class="pill">Visualización</span>
-            <span class="pill">Sistemas distribuidos</span>
-            <span class="pill">Storytelling con datos</span>
-            <span class="pill">Educación &amp; comunidad</span>
+        <article class="card">
+          <h3>Intereses Técnicos</h3>
+          <div class="chip-row">
+            <span class="chip">Análisis de datos</span>
+            <span class="chip">Machine Learning básico</span>
+            <span class="chip">Sistemas distribuidos</span>
+            <span class="chip">Visualización</span>
+            <span class="chip">Storytelling con datos</span>
+            <span class="chip">Educación y comunidad</span>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section-header">
-        <h2>Proyectos &amp; experiencia</h2>
-        <p>Algunas cosas que estoy haciendo fuera de las tareas del día a día.</p>
-      </div>
+    <!-- PROYECTOS / PARTICIPACIÓN -->
+    <section id="proyectos" class="section">
+      <h2 class="section-title">Proyectos y Participación</h2>
+      <p class="section-intro">
+        Un vistazo a cosas que hago dentro y fuera de la carrera.
+      </p>
 
       <div class="cards-grid">
-        <article class="card project-card">
-          <h3>Sitio personal · GitHub Pages</h3>
+        <article class="card">
+          <h3>Representación Estudiantil</h3>
           <p>
-            Página que estás viendo ahora mismo. Diseñada en azul pastel, con secciones claras
-            de skills, trayectoria, fotos y un pequeño juego interactivo.  
-            Construida con <strong>HTML + CSS + JavaScript</strong> y desplegada en GitHub Pages.
+            Recientemente electa como representante de la
+            <strong>División de Ciencias de la Computación</strong> ante el
+            <strong>Foro de Opinión Estudiantil (FOE)</strong> para el periodo 2026.
+            Comenzaré a ejercer el cargo en 2026, trabajando en participación estudiantil
+            y mejora de la vida universitaria.
           </p>
         </article>
 
-        <article class="card project-card">
-          <h3>Representación estudiantil · FOE</h3>
+        <article class="card">
+          <h3>Trabajo Editorial</h3>
           <p>
-            Representante ante el <strong>FOE de la División de Ciencias de la Computación</strong>,
-            como parte de la planilla <strong>B1T</strong> (2025). Trabajo en temas de comunicación,
-            comunidad y vida estudiantil.
+            Editora junior en la sección de deportes de
+            <strong>El Supuesto</strong>, el periódico del ITAM. He escrito artículos
+            para las secciones de nacional y cultura, combinando análisis, contexto
+            y narrativa.
           </p>
         </article>
 
-        <article class="card project-card">
-          <h3>El Supuesto · periodismo estudiantil</h3>
+        <article class="card">
+          <h3>Servicio Social</h3>
           <p>
-            <strong>Editora junior de Deportes</strong> en el periódico del ITAM
-            <em>El Supuesto</em>. He escrito principalmente para las secciones de
-            <strong>nacional</strong> y <strong>cultura</strong>, contando historias que conectan
-            la vida estudiantil con temas sociales más amplios.
-          </p>
-        </article>
-
-        <article class="card project-card">
-          <h3>Crecemos Leyendo · servicio social</h3>
-          <p>
-            Servicio social con grupos de <strong>niños de sexto de primaria</strong>,
-            trabajando lectura, reflexión y actividades creativas para acercarlos a los libros
-            de una forma más cercana y cotidiana.
+            Servicio social en <strong>Crecemos Leyendo</strong>, trabajando con niñas
+            y niños de sexto de primaria. Acompaño procesos de lectura, escritura y
+            reflexión para acercar la literatura a su vida diaria.
           </p>
         </article>
       </div>
@@ -178,310 +158,331 @@
 
     <!-- STATS -->
     <section id="stats" class="section">
-      <div class="section-header">
-        <h2>Stats · quick snapshot</h2>
-        <p>Un resumen muy simple de en qué invierto energía estos semestres.</p>
-      </div>
-
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-label">
-            <span>Carrera y proyectos</span>
-            <span>70%</span>
-          </div>
-          <div class="stat-bar">
-            <div class="stat-bar-fill" style="width: 70%;"></div>
-          </div>
-        </div>
-
-        <div class="stat-item">
-          <div class="stat-label">
-            <span>Familia, amigos y comunidad</span>
-            <span>65%</span>
-          </div>
-          <div class="stat-bar">
-            <div class="stat-bar-fill" style="width: 65%;"></div>
-          </div>
-        </div>
-
-        <div class="stat-item">
-          <div class="stat-label">
-            <span>Deporte, salud y cabeza</span>
-            <span>55%</span>
-          </div>
-          <div class="stat-bar">
-            <div class="stat-bar-fill" style="width: 55%;"></div>
-          </div>
-        </div>
-      </div>
-      <p class="stat-note">
-        *No son números exactos, solo una forma de visualizar prioridades y equilibrio.
+      <h2 class="section-title">Learning Stats</h2>
+      <p class="section-intro">
+        Una foto honesta de en qué estoy invirtiendo más energía técnica últimamente.
       </p>
-    </section>
 
-    <!-- MUSIC -->
-    <section id="music" class="section">
-      <div class="section-header">
-        <h2>Música</h2>
-        <p>Una playlist que me acompaña mientras programo, estudio o regreso en el camión.</p>
-      </div>
-
-      <div class="music-wrapper card">
-        <iframe
-          style="border-radius: 16px"
-          src="https://open.spotify.com/embed/playlist/7h3JjZPfcLkqbsNyIl9NwR?utm_source=generator"
-          width="100%"
-          height="352"
-          frameborder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy">
-        </iframe>
-      </div>
-    </section>
-
-    <!-- JOURNEY / TRAYECTORIA -->
-    <section id="journey" class="section">
-      <div class="section-header">
-        <h2>Trayectoria · Coatepec → Xalapa → CDMX</h2>
-        <p>Un mapa rápido de cómo llegué a Data Science en el ITAM.</p>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Peque chica coatepecana</h3>
-            <p>
-              Café, lluvia, declamación, familia enorme, deportes, SIPINNA en mi municipio
-              y la sensación de que Coatepec era el centro del mundo.
-            </p>
+      <div class="card stats-card">
+        <div class="stat-row">
+          <span class="stat-label">Python</span>
+          <div class="stat-bar">
+            <div class="stat-fill" style="width: 80%;"></div>
           </div>
+          <span class="stat-percent">80%</span>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Prepa en Xalapa</h3>
-            <p>
-              Estudié la prepa en la capital de Veracruz y obtuve el
-              <strong>Técnico en Tecnologías de la Información y Comunicación</strong>.  
-              Más independencia, más decisiones propias, primeros pasos hacia el mundo de la tecnología.
-            </p>
+        <div class="stat-row">
+          <span class="stat-label">SQL</span>
+          <div class="stat-bar">
+            <div class="stat-fill" style="width: 72%;"></div>
           </div>
+          <span class="stat-percent">72%</span>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Llegar a CDMX</h3>
-            <p>
-              El salto grande: mudarme por primera vez, entrar al ITAM, aprender rutas,
-              administrar rentas, permisos, silencios raros y llamadas a casa para verificar
-              que lo que vivo es normal.
-            </p>
+        <div class="stat-row">
+          <span class="stat-label">Data Storytelling</span>
+          <div class="stat-bar">
+            <div class="stat-fill" style="width: 65%;"></div>
           </div>
+          <span class="stat-percent">65%</span>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Sobrevivencia actual</h3>
-            <p>
-              Semestres con horarios complicados, transporte impredecible,
-              audífonos que siempre se pierden menos un par de repuesto horrible que nunca desaparece,
-              y aun así seguir armando una vida que se siente mía.
-            </p>
+        <div class="stat-row">
+          <span class="stat-label">Machine Learning básico</span>
+          <div class="stat-bar">
+            <div class="stat-fill" style="width: 55%;"></div>
           </div>
+          <span class="stat-percent">55%</span>
         </div>
       </div>
     </section>
 
-    <!-- PERFIL + FRASES -->
-    <section id="profile" class="section">
-      <div class="section-header">
-        <h2>Perfil · un poco más de contexto</h2>
-        <p>Cosas que me definen más allá de las materias.</p>
-      </div>
+    <!-- MÚSICA -->
+    <section id="musica" class="section">
+      <h2 class="section-title">Música</h2>
+      <p class="section-intro">
+        Parte de mi energía viene de la música que escucho mientras estudio, programo
+        o viajo entre Coatepec y CDMX.
+      </p>
 
-      <div class="profile-grid">
-        <div class="card">
-          <h3>Fun facts</h3>
-          <ul class="list">
-            <li>Soy la única de mis hermanos sin segundo nombre.</li>
-            <li>Fui declamadora y oradora de niña.</li>
-            <li>He practicado muchos deportes: ballet, <strong>nado sincronizado</strong>,
-              <strong>taekwondo</strong>, atletismo, tenis, danza folklórica, basquetbol…</li>
-            <li>Me encanta capturar todo en fotos y amo los conciertos.</li>
-            <li>Los fines de semana mi depa suele llenarse de gente adoptada temporalmente.</li>
-          </ul>
-        </div>
-
-        <div class="card quotes-card">
-          <h3>Frases / random thoughts</h3>
-          <p class="quotes-sub">
-            Pequeñas ideas que resumen cómo intento ver las cosas.
+      <div class="card music-card">
+        <div class="music-text">
+          <h3>Playlist del Momento</h3>
+          <p>
+            Esta es una de las playlists que más escucho últimamente. Si la abres,
+            probablemente encuentres un poco de pop, algo de nostalgia y canciones
+            que me acompañan en el camino.
           </p>
+          <a
+            href="https://open.spotify.com/playlist/7h3JjZPfcLkqbsNyIl9NwR?si=0XmX0YWFSlm5ecjMcMajhA"
+            target="_blank"
+            class="btn secondary"
+          >
+            Abrir en Spotify
+          </a>
+        </div>
+        <div class="music-embed">
+          <iframe
+            style="border-radius:16px"
+            src="https://open.spotify.com/embed/playlist/7h3JjZPfcLkqbsNyIl9NwR?utm_source=generator"
+            width="100%"
+            height="240"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
 
-          <div class="quote-box">
-            <p id="quote-text">
-              Que alguien la pase mal no es justificación para hacer sentir mal a los demás.
-            </p>
-          </div>
+    <!-- TRAYECTORIA -->
+    <section id="trayectoria" class="section">
+      <h2 class="section-title">Trayectoria</h2>
+      <p class="section-intro">
+        Un resumen de cómo llegué de Coatepec a Ciencia de Datos en CDMX.
+      </p>
 
-          <button id="quote-button" class="btn btn-secondary">
+      <div class="cards-grid timeline-grid">
+        <article class="card">
+          <h3>Coatepec · Origen</h3>
+          <p>
+            Nací y crecí en Coatepec, Veracruz. Café, lluvia, familia grande y
+            actividades culturales marcaron mis primeros años, junto con el gusto
+            por la lectura y por hablar en público.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Xalapa · Técnico en TIC</h3>
+          <p>
+            Estudié la preparatoria en Xalapa y obtuve un
+            <strong>técnico en Tecnologías de la Información y Comunicación</strong>.
+            Fue mi primer contacto formal con programación e infraestructura tecnológica.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>CDMX · Llegar al ITAM</h3>
+          <p>
+            Primer gran salto: mudarme a CDMX para estudiar en el ITAM, aprender rutas,
+            administrar tiempos, rentas y responsabilidades, y construir una nueva rutina
+            lejos de casa.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Ciencia de Datos · Actualidad</h3>
+          <p>
+            Actualmente estudio Ciencia de Datos, participo en representación estudiantil,
+            proyectos editoriales y servicio social, buscando un equilibrio saludable
+            entre universidad, comunidad y vida personal.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PERFIL / FRASES / FUN FACTS -->
+    <section id="perfil" class="section">
+      <h2 class="section-title">Perfil</h2>
+
+      <div class="cards-grid profile-grid">
+        <article class="card">
+          <h3>Cómo Trabajo</h3>
+          <p>
+            Me gusta entender los problemas desde la historia que cuentan: quiénes
+            están involucrados, qué datos existen y qué decisiones se quieren tomar.
+            A partir de ahí conecto análisis cuantitativo con contexto humano.
+          </p>
+          <p>
+            Prefiero procesos claros, comunicación honesta y espacios donde hacer
+            preguntas esté bien visto.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Frase al Azar</h3>
+          <p class="phrase-text" id="phrase-text">
+            “La claridad viene de observar con calma y preguntar bien.”
+          </p>
+          <button id="new-phrase-btn" class="btn pill-button">
+            <span class="btn-icon">✦</span>
             Otra frase
           </button>
+        </article>
 
-          <ul class="list list-small">
-            <li>Prefiero arrepentirme de cómo salió a arrepentirme de no haberlo intentado.</li>
-            <li>Todo por la anécdota (pero con responsabilidad).</li>
+        <article class="card">
+          <h3>Fun Facts</h3>
+          <ul class="fun-list">
+            <li>Me gusta capturar todo en fotos: luces, conciertos, ciudades y detalles pequeños.</li>
+            <li>Fui declamadora y oradora de niña, y participé en SIPINNA en mi municipio.</li>
+            <li>Soy la única de mis hermanos sin segundo nombre.</li>
+            <li>He practicado varios deportes a lo largo de los años, incluyendo nado sincronizado y taekwondo.</li>
           </ul>
-        </div>
+        </article>
       </div>
     </section>
 
     <!-- PHOTOS -->
-    <section id="photos" class="section">
-      <div class="section-header">
-        <h2>Fotos · snapshots of life</h2>
-        <p>Pequeño álbum de recuerdos que me gusta tener cerca.</p>
-      </div>
+    <section id="fotos" class="section">
+<section id="fotos" class="section">
+  <h2 class="section-title">Snapshots of Life</h2>
+  <p class="section-intro">
+    Álbum de recuerdos que me gusta tener cerca: lugares, momentos y seres queridos.
+  </p>
 
-      <div class="photos-grid">
-        <figure class="photo-card">
-          <img src="img/photo1_guts-gallery.jpg" alt="Instalación de arte — luces y reflejos (Guts Gallery)" />
-          <figcaption>Instalación de arte — Guts Gallery</figcaption>
-        </figure>
+  <div class="photos-grid">
+    <figure class="photo-card">
+      <img src="img/photo1.jpg" alt="Instalación de arte — Guts Gallery" />
+      <figcaption>Instalación de arte — Guts Gallery</figcaption>
+    </figure>
 
-        <figure class="photo-card">
-          <img src="img/photo2_tennis-uv.jpg" alt="Cancha de tenis de la Universidad Veracruzana" />
-          <figcaption>Cancha de tenis — Universidad Veracruzana</figcaption>
-        </figure>
+    <figure class="photo-card">
+      <img src="img/photo2.jpg" alt="Cancha de tenis — Universidad Veracruzana" />
+      <figcaption>Cancha de tenis — Universidad Veracruzana</figcaption>
+    </figure>
 
-        <figure class="photo-card">
-          <img src="img/photo3_taylor-eras.jpg" alt="Taylor Swift en concierto, The Eras Tour, CDMX" />
-          <figcaption>Taylor Swift · The Eras Tour · CDMX</figcaption>
-        </figure>
+    <figure class="photo-card">
+      <img src="img/photo3.jpg" alt="Taylor Swift — The Eras Tour · CDMX" />
+      <figcaption>Taylor Swift — The Eras Tour · CDMX</figcaption>
+    </figure>
 
-        <figure class="photo-card">
-          <img src="img/photo4_dogs-field.jpg" alt="Perros caminando entre árboles y pasto verde" />
-          <figcaption>Paseo con mis perros</figcaption>
-        </figure>
+    <figure class="photo-card">
+      <img src="img/photo4.jpg" alt="Perros felices entre árboles y agua" />
+      <figcaption>Perros felices entre árboles y agua</figcaption>
+    </figure>
 
-        <figure class="photo-card">
-          <img src="img/photo5_xico-waterfall.jpg" alt="Cascada en Xico, Veracruz" />
-          <figcaption>Cascada en Xico, Veracruz</figcaption>
-        </figure>
+    <figure class="photo-card">
+      <img src="img/photo5.jpg" alt="Cascada en Xico, Veracruz" />
+      <figcaption>Cascada en Xico, Veracruz</figcaption>
+    </figure>
 
-        <figure class="photo-card">
-          <img src="img/photo6_bouldering.jpg" alt="Muro de escalada en gimnasio de boulder" />
-          <figcaption>Muro de escalada en CDMX</figcaption>
-        </figure>
+    <figure class="photo-card">
+      <img src="img/photo6.jpg" alt="Muro de escalada en CDMX" />
+      <figcaption>Muro de escalada en CDMX</figcaption>
+    </figure>
 
-        <figure class="photo-card">
-          <img src="img/photo7_cineteca.jpg" alt="Vista nocturna de la Cineteca Nacional, CDMX" />
-          <figcaption>Cineteca Nacional — CDMX</figcaption>
-        </figure>
+    <figure class="photo-card">
+      <img src="img/photo7.jpg" alt="Cineteca Nacional — CDMX" />
+      <figcaption>Cineteca Nacional — CDMX</figcaption>
+    </figure>
 
-        <figure class="photo-card">
-          <img src="img/photo8_tepoztotlan.jpg" alt="Templo barroco en Tepotzotlán" />
-          <figcaption>Templo barroco de Tepotzotlán</figcaption>
-        </figure>
+    <figure class="photo-card">
+      <img src="img/photo8.jpg" alt="Templo barroco en Tepotzotlán" />
+      <figcaption>Templo barroco en Tepotzotlán</figcaption>
+    </figure>
 
-        <figure class="photo-card">
-          <img src="img/photo9_farah-cat.jpg" alt="Farah, el gato del ITAM, sobre una laptop" />
-          <figcaption>Farah, el gato del ITAM</figcaption>
-        </figure>
+    <figure class="photo-card">
+      <img src="img/photo9.jpg" alt="Farah, el gato del ITAM" />
+      <figcaption>Farah, el gato del ITAM</figcaption>
+    </figure>
 
-        <figure class="photo-card">
-          <img src="img/photo10_bridge.jpg" alt="Puente colgante rodeado de árboles" />
-          <figcaption>Puente colgante en la naturaleza</figcaption>
-        </figure>
-      </div>
+    <figure class="photo-card">
+      <img src="img/photo10.jpg" alt="Puente colgante entre árboles" />
+      <figcaption>Puente colgante entre árboles</figcaption>
+    </figure>
+  </div>
+</section>
+
     </section>
 
-    <!-- GAME -->
-    <section id="game" class="section">
-      <div class="section-header">
-        <h2>Mini juego · decision helper</h2>
-        <p>Un micro juego para decidir el mini–reto del día.</p>
-      </div>
+    <!-- JUEGO -->
+    <section id="juego" class="section">
+      <h2 class="section-title">Juego · Mini Break</h2>
+      <p class="section-intro">
+        Un descanso rápido entre queries y scripts: adivina el número en el menor número de intentos.
+      </p>
 
       <div class="card game-card">
-        <p class="game-text">
-          Presiona el botón y deja que la página elija un pequeño reto para hoy.
+        <h3>Adivina el Número</h3>
+        <p>
+          La página eligió un número entre <strong>1</strong> y <strong>20</strong>.
+          Escribe un número, presiona “Probar” y te diré si es más alto o más bajo.
         </p>
-        <button id="game-button" class="btn btn-primary">Generar mini–reto</button>
-        <p id="game-result" class="game-result">
-          (Aquí aparecerá el reto.)
+        <div class="game-controls">
+          <input type="number" id="guess-input" min="1" max="20" />
+          <button id="guess-btn" class="btn primary small">Probar</button>
+        </div>
+        <p id="game-message" class="game-message">
+          Empieza cuando quieras.
         </p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="section-header">
-        <h2>Contacto</h2>
-        <p>Si quieres colaborar, platicar de data o solo saludar, aquí me encuentras.</p>
-      </div>
-
-      <div class="contact-grid card">
-        <div>
-          <h3>Mail</h3>
-          <a href="mailto:nayadevelasco@gmail.com">nayadevelasco@gmail.com</a>
-        </div>
-
-        <div>
-          <h3>Redes</h3>
-          <ul class="list">
-            <li><strong>GitHub:</strong> <a href="https://github.com/Nayavvv" target="_blank" rel="noopener">@Nayavvv</a></li>
-            <li><strong>Instagram:</strong> <a href="https://instagram.com/nayavelac" target="_blank" rel="noopener">@nayavelac</a></li>
-            <li><strong>Twitter / X:</strong> <a href="https://twitter.com/naya_va2" target="_blank" rel="noopener">@naya_va2</a></li>
-          </ul>
-        </div>
+        <button id="reset-game-btn" class="btn ghost small">
+          Reiniciar juego
+        </button>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>Hecho con HTML, CSS y un poco de café. GitHub Pages · 2025.</p>
+  <!-- CONTACTO / FOOTER -->
+  <footer id="contacto" class="footer">
+    <h2 class="section-title">Contacto</h2>
+    <p class="section-intro">
+      Si quieres colaborar, preguntar algo o solo decir hola:
+    </p>
+    <div class="footer-links">
+      <a href="mailto:nayadevelasco@gmail.com">nayadevelasco@gmail.com</a>
+      <a href="https://github.com/Nayavvv" target="_blank">GitHub: Nayavvv</a>
+      <a href="https://www.instagram.com/nayavelac" target="_blank">Instagram: @nayavelac</a>
+      <a href="https://twitter.com/naya_va2" target="_blank">X (Twitter): @naya_va2</a>
+    </div>
+    <p class="footer-copy">
+      Hecha con HTML, CSS y paciencia foránea.
+    </p>
   </footer>
 
-  <!-- JS: FRASES + MINI JUEGO -->
+  <!-- JS -->
   <script>
-    const quotes = [
-      "Que alguien la pase mal no es justificación para hacer sentir mal a los demás.",
-      "Prefiero arrepentirme de cómo salió a arrepentirme de no haberlo intentado.",
-      "Siempre de alguna manera todo termina saliendo bien.",
-      "Solo pido un día sin regarla… pero si pasa, que valga la pena la anécdota.",
-      "Mágicamente soy más alta que todos los hombres que dicen medir 1.70."
+    // Frases al azar (más serias / tranquilas)
+    const phrases = [
+      "La claridad viene de observar con calma y preguntar bien.",
+      "Aprender también es aceptar que algunas cosas toman tiempo.",
+      "Los datos importan, pero las personas importan más.",
+      "No todo se puede controlar, pero casi todo se puede aprender.",
+      "Hacer preguntas incómodas también es una forma de cuidar.",
+      "Prefiero arrepentirme de cómo salió a arrepentirme de no haberlo intentado."
     ];
 
-    const quoteText = document.getElementById("quote-text");
-    const quoteButton = document.getElementById("quote-button");
+    const phraseText = document.getElementById("phrase-text");
+    const phraseBtn = document.getElementById("new-phrase-btn");
 
-    if (quoteButton) {
-      quoteButton.addEventListener("click", () => {
-        const idx = Math.floor(Math.random() * quotes.length);
-        quoteText.textContent = quotes[idx];
+    if (phraseBtn) {
+      phraseBtn.addEventListener("click", () => {
+        const next = phrases[Math.floor(Math.random() * phrases.length)];
+        phraseText.textContent = "“" + next + "”";
       });
     }
 
-    const challenges = [
-      "Revisar un dataset viejo y ver qué historia nueva se puede contar.",
-      "Escribir dos ideas de proyectos de datos que te gustaría hacer en el futuro.",
-      "Mandar un mensaje a alguien para agradecerle algo específico.",
-      "Tomar una foto de algo que te recuerde a Coatepec y guardarla para el próximo photodump.",
-      "Cerrar pestañas que ya no necesitas y darte 5 minutos sin pantallas."
-    ];
+    // Juego: adivina el número
+    let secretNumber = Math.floor(Math.random() * 20) + 1;
+    const guessInput = document.getElementById("guess-input");
+    const guessBtn = document.getElementById("guess-btn");
+    const resetBtn = document.getElementById("reset-game-btn");
+    const gameMsg = document.getElementById("game-message");
 
-    const gameButton = document.getElementById("game-button");
-    const gameResult = document.getElementById("game-result");
+    function checkGuess() {
+      const value = Number(guessInput.value);
+      if (!value || value < 1 || value > 20) {
+        gameMsg.textContent = "Escribe un número entre 1 y 20.";
+        return;
+      }
+      if (value === secretNumber) {
+        gameMsg.textContent = "¡Correcto! Era " + secretNumber + ".";
+      } else if (value < secretNumber) {
+        gameMsg.textContent = "Es más alto.";
+      } else {
+        gameMsg.textContent = "Es más bajo.";
+      }
+    }
 
-    if (gameButton) {
-      gameButton.addEventListener("click", () => {
-        const idx = Math.floor(Math.random() * challenges.length);
-        gameResult.textContent = challenges[idx];
+    if (guessBtn) {
+      guessBtn.addEventListener("click", checkGuess);
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener("click", () => {
+        secretNumber = Math.floor(Math.random() * 20) + 1;
+        guessInput.value = "";
+        gameMsg.textContent = "Nuevo número listo. Empieza cuando quieras.";
       });
     }
   </script>
