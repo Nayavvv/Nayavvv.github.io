@@ -570,4 +570,130 @@ main {
   85%  { transform: translateX(-500%); }
   100% { transform: translateX(0%); }
 }
+/* MINI GALERÍA COMPACTA (Snapshots of Life) */
+
+.photo-preview-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.photo-preview-grid img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 14px;
+  cursor: pointer;
+  object-fit: cover;
+  height: 150px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, translate 0.15s ease;
+}
+
+.photo-preview-grid img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 35px rgba(79, 70, 229, 0.25);
+}
+
+.gallery-btn {
+  margin-top: 1.2rem;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #3b82f6, #c084fc);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.35);
+}
+
+.gallery-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 36px rgba(129, 140, 248, 0.4);
+}
+
+/* LIGHTBOX / VISOR DE GALERÍA */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  display: none; /* se muestra con JS */
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.lightbox-content {
+  background: radial-gradient(circle at top, #fdf4ff 0%, #e0e7ff 45%, #ffffff 100%);
+  border-radius: 22px;
+  max-width: 800px;
+  width: 92%;
+  padding: 18px 18px 16px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.6);
+  position: relative;
+}
+
+.lightbox img {
+  width: 100%;
+  max-height: 460px;
+  border-radius: 18px;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+.lightbox-caption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #4338ca;
+  font-weight: 500;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: rgba(15, 23, 42, 0.7);
+  color: #e5e7eb;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.lightbox-nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.lightbox-nav button {
+  flex: 1;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: none;
+  background: #e0e7ff;
+  color: #1f2937;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.lightbox-nav button:hover {
+  background: #c7d2fe;
+}
+
+@media (max-width: 700px) {
+  .photo-preview-grid {
+    flex-direction: column;
+  }
+
+  .photo-preview-grid img {
+    max-width: 100%;
+    height: 190px;
+  }
+}
 
