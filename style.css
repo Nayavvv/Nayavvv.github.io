@@ -385,29 +385,36 @@ main {
 
 .photos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .photo-card {
-  background: var(--card-bg);
-  border-radius: 22px;
-  overflow: hidden;
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.05);
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-5px);
 }
 
 .photo-card img {
-  display: block;
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: 260px;  
+  object-fit: cover; 
+  border-radius: 10px;
 }
 
 .photo-card figcaption {
-  padding: 10px 12px 12px;
-  font-size: 12px;
-  color: var(--text-soft);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #1f3c88;
+  font-weight: 500;
 }
 
 /* GAME */
