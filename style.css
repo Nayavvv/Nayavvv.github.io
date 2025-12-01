@@ -1,0 +1,132 @@
+/* ==== RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f3f8ff;
+  color: #1a2a33;
+  line-height: 1.6;
+}
+
+/* ==== NAVBAR ==== */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: #dceaff;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #aac4e6;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1a2a33;
+  font-weight: 500;
+}
+
+/* ==== HERO ==== */
+.hero {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #264e86;
+}
+
+.hero p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+/* ==== SECTIONS ==== */
+section {
+  padding: 60px 40px;
+  max-width: 850px;
+  margin: auto;
+}
+
+h2 {
+  color: #2e5c99;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  background: #d7e7ff;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* ==== WIDGETS ==== */
+.widget-box {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #bdd3f5;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  background: #7aa7ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #5c8df2;
+}
+
+/* ==== PHOTO GRID ==== */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.photo-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #cbdaf3;
+}
+
+/* ==== ERAS TIMELINE ==== */
+.timeline {
+  border-left: 3px solid #7aa7ff;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.timeline-item h3 {
+  color: #2e5c99;
+  font-size: 20px;
+}
